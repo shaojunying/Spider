@@ -1,10 +1,39 @@
 #!/usr/bin/python
 # coding=utf-8
+import time
+
 import requests
 from pyquery import PyQuery as pq
+import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
 
 # 存储cookie
 cookies = {}
+
+
+def send_email(content):
+    # 第三方 SMTP 服务
+    mail_host = "smtp.126.com"  # SMTP服务器
+    mail_user = "shaojunying1999"  # 用户名
+    mail_pass = "shaojunying1999"  # 密码
+
+    sender = 'shaojunying1999@126.com'  # 发件人邮箱
+    receivers = ['sjy19990407@qq.com', 'shaojunying@bupt.edu.cn']  # 接收人邮箱
+
+    title = 'The grades have been updated.'  # 邮件主题
+    message = MIMEText("sha", 'plain', 'utf-8')  # 内容, 格式, 编码
+    message['From'] = "{}".format(sender)
+    message['To'] = ",".join(receivers)
+    message['Subject'] = Header(title, 'utf-8')
+
+    try:
+        smtpObj = smtplib.SMTP_SSL(mail_host, 465)  # 启用SSL发信, 端口一般是465
+        smtpObj.login(mail_user, mail_pass)  # 登录验证
+        smtpObj.sendmail(sender, receivers, message.as_string())  # 发送
+        print "mail has been send successfully."
+    except smtplib.SMTPException as e:
+        print e
 
 
 def parse_cookie():
@@ -49,9 +78,9 @@ def login_vpn():
     """
     get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
     get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
+    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
+    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
+    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
 
     data = {
         "prot": "https:",
@@ -65,7 +94,7 @@ def login_vpn():
 
     post_url("https://vpn.bupt.edu.cn/global-protect/login.esp", data=data)
     get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
-    get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
+    # get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
 
 
 def login_portal():
@@ -106,12 +135,45 @@ def login_portal():
     doc = pq(html.text)
     doc = doc('tr.odd:nth-child(n+1)')
     scores = {}
+    num = 0
     for item in doc.items():
         name = item('td:nth-child(3)').text()
         score = item('td:nth-child(7)').text()
         scores[name] = score
-    print(scores)
-    with open("result") as f:
-        print(f.read())
+        if score == "":
+            continue
+        num += 1
+    result = ""
+    for name, score in scores.items():
+        result += name.encode("utf-8") + ": " + score + ", "
+    print time.strftime("%a %b %d %H:%M:%S %Y", time.localtime()), result, "\n\n"
+
+    '''
+    文件最后一行存上次更新的全部成绩个数
+    倒数第二行存储每门课程对应的成绩
+    '''
+
+    with open("result.txt", 'r') as f:
+        lines = f.readlines()
+        if int(lines[-1]) == num:
+            # 说明没有更新
+            pass
+            return
+    with open("result.txt", "w") as f:
+        num = 0
+        # 说明更新了
+
+        # 将成绩存入文件中
+        for _, item in scores.items():
+            if item == "":
+                continue
+            f.write(item + ",")
+            num += 1
+        f.write("\n" + str(num) + "\n")
+
+        # 将成绩通过邮件发送
+        result = result.replace(", ", "\n")
+        send_email(result)
+
 
 login_portal()
