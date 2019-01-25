@@ -1,15 +1,19 @@
 #!/usr/bin/python
 # coding=utf-8
+import cookielib
 import time
+import urllib2
 
 import requests
 from pyquery import PyQuery as pq
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
+from setting import *
 
 # 存储cookie
 cookies = {}
+useless_urls = []
 
 
 def send_email(content):
@@ -22,7 +26,7 @@ def send_email(content):
     receivers = ['sjy19990407@qq.com', 'shaojunying@bupt.edu.cn']  # 接收人邮箱
 
     title = 'The grades have been updated.'  # 邮件主题
-    message = MIMEText("sha", 'plain', 'utf-8')  # 内容, 格式, 编码
+    message = MIMEText(content, 'plain', 'utf-8')  # 内容, 格式, 编码
     message['From'] = "{}".format(sender)
     message['To'] = ",".join(receivers)
     message['Subject'] = Header(title, 'utf-8')
@@ -52,6 +56,7 @@ def get_url(url, data=None):
     }
     data = data or {}
     html = requests.get(url, params=data, headers=headers, allow_redirects=False)
+    print "get", url, html.cookies.items()
     for cookie in html.cookies.items():
         cookies[cookie[0]] = cookie[1]
     return html
@@ -63,38 +68,11 @@ def post_url(url, data=None):
     }
     data = data or {}
     html = requests.post(url, data=data, headers=headers, allow_redirects=False)
+    print "post", url, html.cookies.items()
+
     for cookie in html.cookies.items():
         cookies[cookie[0]] = cookie[1]
     return html
-
-
-def login_vpn():
-    """
-    模拟登陆vpn获得cookies
-    """
-
-    """
-    首先无参数登陆获得cookies
-    """
-    get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
-    get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-    # get_url("https://vpn.bupt.edu.cn/global-protect/login.esp")
-
-    data = {
-        "prot": "https:",
-        "server": "vpn.bupt.edu.cn",
-        "inputStr": "",
-        "action": "getsoftware",
-        "user": "2016211967",
-        "passwd": "274119",
-        "ok": "Log In"
-    }
-
-    post_url("https://vpn.bupt.edu.cn/global-protect/login.esp", data=data)
-    get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
-    # get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
 
 
 def login_portal():
@@ -102,47 +80,62 @@ def login_portal():
     登陆信息门户
     :return:
     """
-    # 首先通过登陆vpn获取cookies
-    login_vpn()
-    html = get_url("https://vpn.bupt.edu.cn/http/my.bupt.edu.cn/")
-    html = get_url(html.headers['Location'])
-    html = get_url(html.headers['Location'])
+    # 无参调用获得一个phpSessionId
+    get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
+    data = {
+        "prot": "https:",
+        "server": "vpn.bupt.edu.cn",
+        "inputStr": "",
+        "action": "getsoftware",
+        "user": username,
+        "passwd": vpn_password,
+        "ok": "Log In"
+    }
+    # 模拟登陆操作
+    post_url("https://vpn.bupt.edu.cn/global-protect/login.esp", data=data)
+    # 获取gp_session_ck
+    get_url("https://vpn.bupt.edu.cn/global-protect/portal/portal.esp")
+
+    # ('PAN_GP_CACHE_LOCAL_VER_ON_SERVER', '0'), ('PAN_GP_CK_VER', '2')
+    get_url("https://vpn.bupt.edu.cn/http/my.bupt.edu.cn/")
+    #
+    html = get_url("https://vpn.bupt.edu.cn/https/auth.bupt.edu.cn/authserver/login?service=http%3A%2F%2Fmy.bupt.edu"
+                   ".cn%2Flogin.portal")
     doc = pq(html.text)
     data = {
-        "username": "2016211967",
-        "password": "04274119",
+        "username": username,
+        "password": portal_password,
         "lt": doc("input[name='lt']").attr("value"),
         "execution": doc("input[name='execution']").attr("value"),
         "_eventId": "submit",
         "rmShown": doc("input[name='rmShown']").attr("value"),
     }
-    html = post_url(
+    print data['lt']
+    # 登陆信息门户
+    post_url(
         "https://vpn.bupt.edu.cn/https/auth.bupt.edu.cn/authserver/login?service=http%3A%2F%2Fmy.bupt.edu.cn%2Flogin"
         ".portal", data=data)
-    html = get_url(html.headers['Location'])
-
-    get_url(html.headers['Location'])
     # 访问信息门户
-    html = get_url("https://vpn.bupt.edu.cn/http/my.bupt.edu.cn/index.portal")
+    get_url("https://vpn.bupt.edu.cn/http/my.bupt.edu.cn/index.portal")
 
-    # 进入教务系统
+    # 进入教务系统(会更新PAN_GP_CK_VER)
     html = get_url("https://vpn.bupt.edu.cn/http-9001/10.3.255.178/caslogin.jsp")
+    # 将上面的页面进行跳转
     html = get_url(html.headers['Location'])
-    html = get_url(html.headers['Location'])
-    html = get_url(html.headers['Location'])
+    # 这里会生成一个get请求,请求中包含一个ticket参数,不能省略
+    get_url(html.headers['Location'])
     # 进入成绩查询
     html = get_url("https://vpn.bupt.edu.cn/http-9001/10.3.255.178/bxqcjcxAction.do")
     doc = pq(html.text)
     doc = doc('tr.odd:nth-child(n+1)')
+
     scores = {}
-    num = 0
     for item in doc.items():
         name = item('td:nth-child(3)').text()
         score = item('td:nth-child(7)').text()
-        scores[name] = score
         if score == "":
             continue
-        num += 1
+        scores[name] = score
     result = ""
     for name, score in scores.items():
         result += name.encode("utf-8") + ": " + score + ", "
@@ -155,7 +148,7 @@ def login_portal():
 
     with open("result.txt", 'r') as f:
         lines = f.readlines()
-        if int(lines[-1]) == num:
+        if int(lines[-1]) == len(scores):
             # 说明没有更新
             pass
             return
