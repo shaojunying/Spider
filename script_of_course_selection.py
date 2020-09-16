@@ -63,10 +63,10 @@ def confirm_select_course_result(target_course_id):
     # 第一项为表头
     for i in range(1, len(trs)):
         course_property = trs[i].select("td")
-        course_id = course_property[0].get_text().strip()
-        course_status = trs[i].select("a")[0].get_text().strip()
+        course_id = course_property[0].get_text().course_status()
+        course_status = trs[i].select("a")[0].get_text().course_status()
         if course_id == target_course_id:
-            return course_status != "选择上课班级"
+            return course_status != "选择上课班级" and course_status != ""
     return False
 
 
@@ -84,13 +84,19 @@ for i in range(1, len(trs)):
     course_id = course_property[0].get_text().strip()
     course_name = course_property[1].get_text().strip()
     # 获取课程状态
-    course_status = trs[i].select("a")[0].get_text().strip()
+    links = trs[i].select("a")
+    if len(links) == 1:
+        selection_status = ""
+        course_status = trs[i].select("a")[0].get_text().strip()
+    else:
+        selection_status = links[0].get_text().strip()
+        course_status = trs[i].select("a")[1].get_text().strip()
 
-    if course_status == "选择上课班级":
+    if course_status != "班级已全选满":
         log("课程[%s]还有余量" % course_name)
 
     if course_id == target_courses_id:
-        if course_status != "选择上课班级":
+        if selection_status != "选择上课班级" and selection_status != "":
             log("您当前已经选择课程[%s]" % course_name)
         else:
             log("开始选择课程[%s]" % course_name)
