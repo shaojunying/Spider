@@ -20,7 +20,7 @@ headers = {
                   "Safari/537.36",
 }
 
-target_courses_id = "3151101174"
+target_courses_id = "3151400056"
 
 
 def log(message):
@@ -70,49 +70,54 @@ def confirm_select_course_result(target_course_id):
     return False
 
 
-html = requests.get("http://10.3.255.32/Lesson/PlanCourseOnlineSel.aspx", headers=headers)
-assert html.status_code == 200, "获取计划课程列表失败"
+while True:
 
-soup = BeautifulSoup(html.text, "lxml")
+    html = requests.get("http://10.3.255.32/Lesson/PlanCourseOnlineSel.aspx", headers=headers)
+    assert html.status_code == 200, "获取计划课程列表失败"
 
+    soup = BeautifulSoup(html.text, "lxml")
 
-trs = soup.select("#contentParent_dgData > tr")
+    trs = soup.select("#contentParent_dgData > tr")
 
-# 第一项为表头
-for i in range(1, len(trs)):
-    course_property = trs[i].select("td")
-    course_id = course_property[0].get_text().strip()
-    course_name = course_property[1].get_text().strip()
-    # 获取课程状态
-    links = trs[i].select("a")
-    if len(links) == 1:
-        selection_status = ""
-        course_status = trs[i].select("a")[0].get_text().strip()
-    else:
-        selection_status = links[0].get_text().strip()
-        course_status = trs[i].select("a")[1].get_text().strip()
-
-    if course_status != "班级已全选满":
-        log("课程[%s]还有余量" % course_name)
-
-    if course_id == target_courses_id:
-        if selection_status != "选择上课班级" and selection_status != "":
-            log("您当前已经选择课程[%s]" % course_name)
+    # 第一项为表头
+    for i in range(1, len(trs)):
+        course_property = trs[i].select("td")
+        course_id = course_property[0].get_text().strip()
+        course_name = course_property[1].get_text().strip()
+        # 获取课程状态
+        links = trs[i].select("a")
+        if len(links) == 1:
+            selection_status = ""
+            course_status = trs[i].select("a")[0].get_text().strip()
         else:
-            log("开始选择课程[%s]" % course_name)
-            # 获取选课请求需要的参数
-            text = trs[i].select("a")[0]["onclick"]
-            result = re.search(r"selClass\('\?(.*?)','selClass'\);", text)
-            param = result.group(1)
-            # 提交选课请求时要用的表单
-            data = simulate_select_class_page(param)
+            selection_status = links[0].get_text().strip()
+            course_status = trs[i].select("a")[1].get_text().strip()
 
-            select_course_url = "http://10.3.255.32/Gstudent/Course/PlanSelClass.aspx?" + param
-            result = requests.post(select_course_url, data=data, headers=headers)
-            while result.status_code != 200 or not confirm_select_course_result(target_courses_id):
-                log("选课[%s]失败,将在3秒之后重试" % course_name)
-                time.sleep(3)
-                result = requests.post(select_course_url, data=data, headers=headers)
+        if course_status != "班级已全选满":
+            log("课程[%s]还有余量" % course_name)
+
+        if course_id == target_courses_id:
+            if selection_status != "选择上课班级" and selection_status != "":
+                log("您当前已经选择课程[%s]" % course_name)
+            elif course_status == "班级已全选满":
+                log("要选的课程[%s]已全选满" % course_name)
             else:
-                log("选择课程[%s]成功" % course_name)
+                log("开始选择课程[%s]" % course_name)
+                # 获取选课请求需要的参数
+                text = trs[i].select("a")[0]["onclick"]
+                result = re.search(r"selClass\('\?(.*?)','selClass'\);", text)
+                if result is not None:
+                    param = result.group(1)
+                    # 提交选课请求时要用的表单
+                    data = simulate_select_class_page(param)
 
+                    select_course_url = "http://10.3.255.32/Gstudent/Course/PlanSelClass.aspx?" + param
+                    result = requests.post(select_course_url, data=data, headers=headers)
+                    while result.status_code != 200 or not confirm_select_course_result(target_courses_id):
+                        log("选课[%s]失败,将在1秒之后重试" % course_name)
+                        time.sleep(1)
+                        result = requests.post(select_course_url, data=data, headers=headers)
+                    else:
+                        log("选择课程[%s]成功" % course_name)
+    time.sleep(3)
+    print("\n\n\n")
