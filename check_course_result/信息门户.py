@@ -1,15 +1,14 @@
 #!/usr/bin/python
 # coding=utf-8
-import cookielib
+import smtplib
 import time
-import urllib2
+from email.header import Header
+from email.mime.text import MIMEText
 
 import requests
 from pyquery import PyQuery as pq
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
-from setting import *
+
+from check_course_result.setting import *
 
 # 存储cookie
 cookies = {}
