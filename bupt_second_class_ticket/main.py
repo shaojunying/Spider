@@ -1,6 +1,7 @@
 import datetime
 import threading
 from concurrent.futures import ThreadPoolExecutor
+from multiprocessing import Process
 
 import requests
 
@@ -44,15 +45,26 @@ class PostThread(threading.Thread):
             print(datetime.datetime.now().time(), response)
 
 
-if __name__ == '__main__':
-    # print(time.time())
+def fun():
     with ThreadPoolExecutor(max_workers=100) as executor:
         for i in range(1000):
             future = executor.submit(post)
-            print(datetime.datetime.now().time(), future.result())
+            # print(datetime.datetime.now().time(), future.result())
+            print(datetime.datetime.now().time())
+
+
+if __name__ == '__main__':
+    # print(time.time())
     # for i in range(epoch):
     #     thread = PostThread(i)
     #     thread.start()
     #     thread.join()
     #     # time.sleep(0.30)
     # print(time.time())
+    processes = []
+    for _ in range(8):
+        p = Process(target=fun)
+        processes.append(p)
+        p.start()
+    for p in processes:
+        p.join()
