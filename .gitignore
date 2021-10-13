@@ -1,1 +1,5 @@
 /.idea/
+/*/config.py
+/laundry-machine/img/
+/*/data
+.DS_STORE
