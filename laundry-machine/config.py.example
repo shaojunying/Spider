@@ -1,0 +1,21 @@
+# 要抢洗衣机的手机号
+PHONE_NUMBER = "xxxxxxxxxxxxxx"
+
+# 该参数用来获取洗衣机的剩余时间，一般同一楼层洗衣机的store_id是相同的
+STORE_ID = 'xxxxxxxxxxxxxx'
+
+# 用户的登录信息保存的路径。（用来避免每次运行程序都需要获取验证码）
+TARGET_FILE = "data"
+
+# 洗衣机上的二维码对应的URL（扫码抢洗衣机最可靠，APP上的预约可能会有延迟）
+LAUNDRY_MACHINE_URLS = [
+    "https://u.zhinengxiyifang.cn/api/Devices/getDevicesByCode?qrCode=https:%2F%2Fq.ujing.com.cn%2Fucqrc%2Findex.html"
+    "%3Fcd%xxxxxxxxxxxxxx",
+    "https://u.zhinengxiyifang.cn/api/Devices/getDevicesByCode?qrCode=https:%2F%2Fq.ujing.com.cn%2Fucqrc%2Findex.html"
+    "%3Fcd%xxxxxxxxxxxxxx"
+]
+
+SEND_NOTICE_URLS = [
+    "https://api.day.app/xxxxxxxxxxxxxx/",  # phone url
+    "https://api.day.app/xxxxxxxxxxxxxx/"   # mac url
+]
