@@ -1,0 +1,33 @@
+import logging
+
+# ----------------------------------------------------------------------
+
+# 需要配置的参数
+
+# 手机号
+PHONE = "xxxxxxxxxxx"
+# 加密之后的手机号
+ENCRYPTED_PHONE = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+# 加密之后的密码
+ENCRYPTED_PASSWORD = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+# 如果账号只绑定了一个就诊人，则不用配置该参数。
+# 如果超过一个就诊人，请在这里指定要选择的就诊人的姓名
+PATIENT_NAME = "张三"
+
+# ******要挂的科室id
+# DOCTOR_ID = "51645497"  # 九价
+DOCTOR_ID = "253068057"  # 全科医学科门诊(可以使用这个测试程序能否正常运行)
+
+# ******睡眠时间 (只是测试的话每次请求之后休眠0.5秒，避免请求太快被识别为恶意请求)
+# 要抢号的时候将它设置为0就可以了
+SLEEP_TIME = 0.5
+
+# --------------------------------------------------------------------------
+# 以下参数不需要修改
+
+# 保存登录凭证的文件名
+TARGET_FILE = "data"
+
+# 日志级别，不需要改动
+LOGGING_LEVEL = logging.INFO
