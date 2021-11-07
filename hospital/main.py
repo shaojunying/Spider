@@ -1,6 +1,8 @@
 import json
+import logging.handlers
 import os
 import pickle
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 
@@ -18,14 +20,16 @@ SUBMIT_URL = "https://m.hsyuntai.com/med/hp/hospitals/100582/registration/submit
 LOGIN_URL = "https://m.hsyuntai.com/med/user/100582/login"
 
 # 获取科室详情的URL
-DEPARTMENT_URL = "https://m.hsyuntai.com/med/hp/hospitals/100582/registration/doctorDetails225?docId={doctor_id}&filtrate=N"
+DEPARTMENT_URL = "https://m.hsyuntai.com/med/hp/hospitals/100582/registration/doctorDetails225?docId={" \
+                 "doctor_id}&filtrate=N"
 
 # 默认的请求头 直接全部传递过去
 headers = {
     'sec-ch-ua': '"Google Chrome";v="95", "Chromium";v="95", ";Not A Brand";v="99"',
     'DNT': '1',
     'sec-ch-ua-mobile': '?1',
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) '
+                  'Chrome/95.0.4638.54 Mobile Safari/537.36',
     'Content-Type': 'application/json;charset=UTF-8',
     'EagleEye-SessionID': 'tnk8Ivtyd5s7mR941kF996ql2k7p',
     'Accept': 'application/json, text/plain, */*',
@@ -182,7 +186,7 @@ def init_session():
         try:
             get_patients()
         except Exception as e:
-            print(e)
+            logging.info(e)
             # 登录信息已失效，重新登录
             login()
     else:
@@ -245,13 +249,45 @@ def get_selected_department():
             if SLEEP_TIME > 0:
                 logging.info(f"休眠 {SLEEP_TIME} 秒后继续重试")
                 time.sleep(SLEEP_TIME)
+            break
+
+
+def init_log_config():
+    """
+    初始化日志文件配置，将不同级别日志打印到不同的文件中、命令行只展示级别高于或等于info的日志
+    :return:
+    """
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+
+    debug_handler = logging.FileHandler(os.path.join(LOGGING_PATH, "debug.log"))
+    debug_handler.setLevel(logging.DEBUG)
+
+    info_handler = logging.FileHandler(os.path.join(LOGGING_PATH, "info.log"))
+    info_handler.setLevel(logging.INFO)
+
+    warning_handler = logging.FileHandler(os.path.join(LOGGING_PATH, "warning.log"))
+    warning_handler.setLevel(logging.WARN)
+
+    error_handler = logging.FileHandler(os.path.join(LOGGING_PATH, "error.log"))
+    error_handler.setLevel(logging.ERROR)
+
+    logging.basicConfig(
+        format='%(asctime)s\t%(pathname)s\tlines: %(lineno)s\t%(levelname)-8s\t%(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S',
+        level=logging.DEBUG,
+        handlers=[
+            console_handler,
+            debug_handler,
+            info_handler,
+            warning_handler,
+            error_handler
+        ]
+    )
 
 
 def main():
-    logging.basicConfig(
-        format='%(asctime)s %(pathname)s lines: %(lineno)s %(levelname)-8s %(message)s',
-        level=LOGGING_LEVEL,
-        datefmt='%Y-%m-%d %H:%M:%S')
+    init_log_config()
 
     init_session()
 
