@@ -253,6 +253,9 @@ def init_log_config():
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(logging.INFO)
 
+    if not os.path.exists(LOGGING_PATH):
+        os.makedirs(LOGGING_PATH)
+
     debug_handler = logging.FileHandler(os.path.join(LOGGING_PATH, "debug.log"))
     debug_handler.setLevel(logging.DEBUG)
 
@@ -266,7 +269,7 @@ def init_log_config():
     error_handler.setLevel(logging.ERROR)
 
     logging.basicConfig(
-        format='%(asctime)s\t%(pathname)s\tlines: %(lineno)s\t%(levelname)-8s\t%(message)s',
+        format='%(asctime)s.%(msecs)03d\t%(pathname)s\tlines: %(lineno)s\t%(levelname)-8s\t%(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         level=logging.DEBUG,
         handlers=[
@@ -340,7 +343,8 @@ def block_until_create_time():
     阻塞，直到当前时间晚于抢号时间
     :return:
     """
-    start_time = get_time_from_str(START_TIME)
+    today = datetime.today().strftime("%Y-%m-%d")
+    start_time = datetime.strptime(today + " " + START_TIME, '%Y-%m-%d %H:%M:%S.%f')
     while True:
         now = datetime.now()
         if now >= start_time:
@@ -349,8 +353,10 @@ def block_until_create_time():
             duration = start_time - now
             if duration.seconds > 65:
                 sleep_time = 60
-            else:
+            elif duration.seconds > 10:
                 sleep_time = 1
+            else:
+                sleep_time = 0.02
             logging.info(f"当前时间 {now} , 早于开始抢号时间 {start_time} , 休眠 {sleep_time} 秒")
             time.sleep(sleep_time)
 
@@ -404,15 +410,15 @@ def main():
     block_until_create_time()
 
     end_time = get_time_from_str(END_TIME)
-    notice.send_message("开始抢号！！！")
-    logging.info("开始抢号！！！")
-
-    for key in ('schId', 'deptId', 'docId', 'deptName'):
-        data[key] = selected_department[key]
 
     # 多线程抢票，避免一个请求耗时过长导致后续请求不能发出。
     global success, repeated_request
     with ThreadPoolExecutor() as pool:
+        pool.submit(notice.send_message, "开始抢号！！！")
+        logging.info("开始抢号！！！")
+
+        for key in ('schId', 'deptId', 'docId', 'deptName'):
+            data[key] = selected_department[key]
         while True:
             pool.submit(submit, data)
             logging.info(f"休眠 {SLEEP_TIME} 秒")
