@@ -3,3 +3,4 @@
 /laundry-machine/img/
 /*/data
 .DS_STORE
+*.log

@@ -6,14 +6,15 @@ import logging
 import os.path
 import pickle
 import setting as S
+from flask import Flask, request, render_template
 
 import requests
 
 door_map = {
-    "单元门": "xxxxxxxxxxxxxxxxxxx",
-    "西门": "xxxxxxxxxxxxxxxxxx",
-    "东一门": "xxxxxxxxxxxxxx",
-    "东二门": "xxxxxxxxxxxxxxxxx"
+    "单元门": "231516322133987328",
+    "西门": "238761945098878976",
+    "东一门": "238774987446550528",
+    "东二门": "238773766216220672",
 }
 
 params = {
@@ -102,7 +103,7 @@ def open_the_door(door, retry_when_login_ticket_expired=False):
     if cookie is not None:
         session.cookies.update(cookie)
 
-    response = session.post(OPEN_DOOR_URL.format(equipment_id=door_map.get(DOOR)), headers=header)
+    response = session.post(OPEN_DOOR_URL.format(equipment_id=door_map.get(door)), headers=header)
     data = json.loads(response.text)
     logging.info(f"开门：code: {data['code']}, message: {data['message']}")
     if data['code'] == 200:
@@ -142,5 +143,18 @@ def main():
     open_the_door(door, True)
 
 
+# 创建一个接口 暴露main函数
+app = Flask(__name__)
+
+
+@app.route("/")
+def index():
+    door = request.args.get("door", default="单元门")
+    open_the_door(door, retry_when_login_ticket_expired=True)
+
+    return render_template("index.html")
+
+
 if __name__ == '__main__':
-    main()
+    open_the_door("单元门", retry_when_login_ticket_expired=True)
+    app.run("0.0.0.0", port=80)
