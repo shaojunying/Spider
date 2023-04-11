@@ -122,6 +122,7 @@ def open_the_door(door, retry_when_login_ticket_expired=False):
     else:
         logging.error(f"开门失败：code: {data['code']}, message: {data['message']}")
         return
+    logging.info("开门成功")
 
 
 def main():
