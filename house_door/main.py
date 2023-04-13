@@ -33,6 +33,8 @@ LOGIN_URL = "https://api.lookdoor.cn:443/func/hjapp/user/v2/login.json"
 # 开门
 OPEN_DOOR_URL = "https://api.lookdoor.cn:443/func/hjapp/house/v1/pushOpenDoorBySn.json?equipmentId={equipment_id}"
 
+LOGIN_RETURN_VALUES_URL = "https://api.lookdoor.cn:443/func/hjapp/user/v1/loginReturnValues.json?"
+
 # 默认要开启的门（没有在命令行指定的话将开这个门）
 DOOR = "单元门"
 
@@ -88,6 +90,20 @@ def login():
     save_data_to_file(session.cookies)
 
 
+def get_login_return_value(session:requests.Session):
+    response = session.post(LOGIN_RETURN_VALUES_URL)
+    data = json.loads(response.text)
+    logging.info(f"LOGIN_RETURN_VALUES_URL response:{response.text}")
+    if data['code'] != 200:
+        logging.error(f"获取登录信息失败")
+        return None
+    data = data['data']
+    if len(data) == 0:
+        logging.error(f"获取登录信息失败")
+        return None
+    return data['blockList'][0]['openDoorPwd']
+
+
 def open_the_door(door, retry_when_login_ticket_expired=False):
     """
     尝试开门，如果开门失败 并且 retry_when_login_ticket_expired 为True则登录后再次尝试；否则直接退出
@@ -109,20 +125,23 @@ def open_the_door(door, retry_when_login_ticket_expired=False):
     if data['code'] == 200:
         # 成功
         logging.info(f"开锁[{door}]成功")
-        return
+        return False, f"开锁[{door}]成功"
+    elif data['code'] == 999:
+        password = get_login_return_value(session)
+        logging.info(f"password: {password}")
+        return True, password
     elif data['code'] == 2:
         # 登录信息失效，重新登录
         logging.error("登录信息失效")
         if not retry_when_login_ticket_expired:
-            return
+            return False, f"登录信息失效"
         # 重新登录并开门
         logging.info("重新登录")
         login()
-        open_the_door(door, False)
+        return open_the_door(door, False)
     else:
         logging.error(f"开门失败：code: {data['code']}, message: {data['message']}")
-        return
-    logging.info("开门成功")
+        return False, f"开门失败：code: {data['code']}, message: {data['message']}"
 
 
 def main():
@@ -151,9 +170,11 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     door = request.args.get("door", default="单元门")
-    open_the_door(door, retry_when_login_ticket_expired=True)
-
-    return render_template("index.html")
+    should_use_password, message = open_the_door(door, retry_when_login_ticket_expired=True)
+    if should_use_password:
+        return render_template("show_password.html", password=message)
+    else:
+        return render_template("index.html", message=message)
 
 
 if __name__ == '__main__':
