@@ -11,14 +11,14 @@ import logging
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
-from config import communities
+from config import communities, DEFAULT_INFO_PATH, DEFAULT_HISTORY_PATH, OUTPUT_PATH
 
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('scraper.log', encoding='utf-8'),
+        logging.FileHandler('output/scraper.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -545,24 +545,29 @@ def main():
         return
 
     # 合并历史数据
-    history_data = file_manager.load_csv('houses_info.csv')
-    price_history_data = file_manager.load_csv('price_history.csv')
+    history_data = file_manager.load_csv(DEFAULT_INFO_PATH)
+    price_history_data = file_manager.load_csv(DEFAULT_HISTORY_PATH)
     merged_data = data_processor.merge_house_data(new_houses_data, history_data, price_history_data)
 
     # 保存房源数据
     today_str = DateHelper.today()
     fields = list(merged_data[0].keys()) if merged_data else []
 
-    file_manager.save_csv(merged_data, f'houses_info_{today_str}.csv', fields)
-    file_manager.save_csv(merged_data, 'houses_info.csv', fields)
+    file_manager.save_csv(merged_data, os.path.join(OUTPUT_PATH, f'houses_info_{today_str}.csv'), fields)
+    file_manager.save_csv(merged_data, DEFAULT_INFO_PATH, fields)
 
     # 处理价格历史
     price_history_fields = ['id', '小区', '日期', '单价', '旧单价']
-    existing_price_history = file_manager.load_csv('price_history.csv')
+    existing_price_history = file_manager.load_csv(DEFAULT_HISTORY_PATH)
     new_price_history = data_processor.create_price_history(new_houses_data, existing_price_history)
 
-    file_manager.save_csv(new_price_history, f'price_history_{today_str}.csv', price_history_fields)
-    file_manager.save_csv(new_price_history, 'price_history.csv', price_history_fields)
+    file_manager.save_csv(new_price_history, os.path.join(OUTPUT_PATH,f'price_history_{today_str}.csv'), price_history_fields)
+    file_manager.save_csv(new_price_history, DEFAULT_HISTORY_PATH, price_history_fields)
+
+    logger.info("开始数据分析")
+
+    from house_analysis import analyze_house_changes
+    analyze_house_changes(DEFAULT_HISTORY_PATH, DEFAULT_INFO_PATH)
 
     logger.info("任务完成")
 
