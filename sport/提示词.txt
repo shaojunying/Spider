@@ -1,0 +1,13 @@
+
+
+
+上面分别是一段CURL命令，以及其Response body，请解析body，并将结果保存为Excel，Excel文件名应该使用以下逻辑生成
+
+filename = os.path.basename(__file__)
+basename = os.path.splitext(filename)[0]
+new_filename = basename + ".xlsx"
+from sport import config
+excel_file_path = os.path.join(config.output_path, new_filename)
+
+如果有分页，请分别获取每一页的数据
+请添加日志，便于监控
