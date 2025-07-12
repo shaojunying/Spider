@@ -128,6 +128,29 @@ def print_daily_average_price_trend(history_df: pd.DataFrame):
         print(f"{date_str} : {avg_price:.2f} 元/㎡")
 
 
+def print_top_bottom_price_by_community(detail_df: pd.DataFrame, top_n: int = 3):
+    """
+    统计并打印每个小区单价最高的top_n和最低的top_n房源
+    """
+    print("\n🏆 各小区单价最高和最低房源排名：")
+    for community, group in detail_df.groupby('小区'):
+        group_sorted = group.copy()
+        group_sorted['单价'] = pd.to_numeric(group_sorted['单价'], errors='coerce')
+
+        top_list = group_sorted.nlargest(top_n, '单价')
+        bottom_list = group_sorted.nsmallest(top_n, '单价')
+
+        print(f"\n小区：{community}")
+        print(f"  🔺 最高单价前 {top_n} 套：")
+        for _, row in top_list.iterrows():
+            print(f"    ID: {row['id']}, 单价: {row['单价']} 元/㎡, 户型: {row['户型']}, 面积: {row['建筑面积']}㎡, 楼层: {row['楼层']}")
+
+        print(f"  🔻 最低单价前 {top_n} 套：")
+        for _, row in bottom_list.iterrows():
+            print(f"    ID: {row['id']}, 单价: {row['单价']} 元/㎡, 户型: {row['户型']}, 面积: {row['建筑面积']}㎡, 楼层: {row['楼层']}")
+
+
+
 
 def analyze_house_changes(price_history_path: str,
                           house_info_path: str,
@@ -135,9 +158,6 @@ def analyze_house_changes(price_history_path: str,
                           latest_only: bool = False,
                           show_drop_rank: bool = False,
                           top_n: int = None) -> List[Dict]:
-    """
-    分析房源每天的新增、下架、价格变化情况，并可选显示房价降幅排序。
-    """
     history_df = pd.read_csv(price_history_path, dtype={'id': str})
     detail_df = pd.read_csv(house_info_path, dtype={'id': str})
 
@@ -147,7 +167,6 @@ def analyze_house_changes(price_history_path: str,
 
     results = []
 
-    # 如果只分析最新一天的变化
     range_to_process = range(len(dates) - 1, len(dates)) if latest_only else range(1, len(dates))
 
     for i in range_to_process:
@@ -167,28 +186,50 @@ def analyze_house_changes(price_history_path: str,
             if df_today.loc[hid, '单价'] != df_yesterday.loc[hid, '单价']
         ]
 
-        print(f"\n📅 日期：{today.date()}")
-        print_house_list("🟢 新增房源", added_ids, detail_df, output_detail)
-        print_house_list("🔴 下架房源", removed_ids, detail_df, output_detail)
-        print_price_changes(price_changed_ids, df_yesterday, df_today, detail_df, output_detail)
+        # 所有相关id，准备详情
+        involved_ids = added_ids | removed_ids | set(price_changed_ids)
+        involved_detail = detail_df[detail_df['id'].isin(involved_ids)]
 
-        results.append({
-            '日期': today.date(),
-            '新增': len(added_ids),
-            '下架': len(removed_ids),
-            '价格变动': len(price_changed_ids),
-        })
+        # 按小区分组
+        for community, group in involved_detail.groupby('小区'):
+            comm_ids = set(group['id'])
 
+            comm_added = added_ids & comm_ids
+            comm_removed = removed_ids & comm_ids
+            comm_price_changed = [hid for hid in price_changed_ids if hid in comm_ids]
 
-    # 新增：打印每日均价趋势
-    print_daily_average_price_trend(history_df)
+            print(f"\n📅 日期：{today.date()}（小区：{community}）")
+            print_house_list("🟢 新增房源", comm_added, detail_df, output_detail)
+            print_house_list("🔴 下架房源", comm_removed, detail_df, output_detail)
+            print_price_changes(comm_price_changed, df_yesterday, df_today, detail_df, output_detail)
 
-    # 调用降幅打印逻辑
+            results.append({
+                '日期': today.date(),
+                '小区': community,
+                '新增': len(comm_added),
+                '下架': len(comm_removed),
+                '价格变动': len(comm_price_changed),
+            })
+
+    # 计算每日各小区均价趋势
+    print("\n📈 各小区每日均价趋势（元/㎡）:")
+    avg_prices = history_df.groupby(['日期', '小区'])['单价'].mean().reset_index()
+    for community, group in avg_prices.groupby('小区'):
+        print(f"\n小区：{community}")
+        for _, row in group.iterrows():
+            print(f"{row['日期'].date()} : {row['单价']:.2f} 元/㎡")
+
+    # 分小区输出降幅排行
     if show_drop_rank:
-        print_price_drop_rank(detail_df, top_n)
+        print("\n📉 各小区房价降幅排名（最高价 -> 最低价）:")
+        for community, group in detail_df.groupby('小区'):
+            print(f"\n小区：{community}")
+            print_price_drop_rank(group, top_n)
+
+    # 新增调用：打印每个小区单价最高和最低房源
+    print_top_bottom_price_by_community(detail_df, top_n=3)
 
     return results
-
 
 if __name__ == '__main__':
     import argparse
