@@ -11,7 +11,7 @@ import logging
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
-from config import communities, DEFAULT_INFO_PATH, DEFAULT_HISTORY_PATH, OUTPUT_PATH
+from config import communities, DEFAULT_INFO_PATH, DEFAULT_HISTORY_PATH, OUTPUT_PATH, COMMUNITY_NAME
 
 # 配置日志
 logging.basicConfig(
@@ -569,7 +569,7 @@ def main():
     logger.info("开始数据分析")
 
     from house_analysis import analyze_house_changes
-    analyze_house_changes(DEFAULT_HISTORY_PATH, DEFAULT_INFO_PATH)
+    analyze_house_changes(DEFAULT_HISTORY_PATH, DEFAULT_INFO_PATH, community=COMMUNITY_NAME)
 
     logger.info("任务完成")
 
