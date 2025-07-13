@@ -130,14 +130,54 @@ class RateLimitHandler:
     """限流处理器"""
 
     @staticmethod
+    def solve_anjuke_verification(url: str):
+        """使用 Selenium 打开页面并处理点击验证"""
+        from selenium import webdriver
+        from selenium.webdriver.chrome.service import Service
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.chrome.options import Options
+        import time
+
+        CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
+
+        chrome_options = Options()
+        chrome_options.add_argument('--start-maximized')
+        chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+        # chrome_options.add_argument('--headless')
+
+        driver = webdriver.Chrome(service=Service(CHROMEDRIVER_PATH), options=chrome_options)
+
+        try:
+            driver.get(url)
+            time.sleep(3)
+
+            try:
+                verify_btn = driver.find_element(By.XPATH, "//*[contains(text(), '点击去完成')]")
+                print("⚠️ 检测到点击验证，准备点击...")
+                verify_btn.click()
+                time.sleep(5)
+            except Exception:
+                print("✅ 页面未触发验证。")
+
+            driver.save_screenshot("anjuke_verify.png")
+
+        finally:
+            driver.quit()
+
+    @staticmethod
     def handle_rate_limit():
         """处理IP限流"""
+        import sys
+
         logger.warning("遇到IP限流机制")
-        print("遇到IP限流机制，请手动打开以下链接继续抓取：")
-        print(
-            "https://m.anjuke.com/bj/sale/S3449979172707338/?isauction=221&position=1&kwtype=comm_one&now_time=1752151592&epauction&stats_key=1cc0e8bf-588f-49e2-94a2-94ea665a2258_1&from=Exp_Anjuke_Prop_List")
-        print("请在浏览器中打开链接，等待页面加载完成后按回车继续抓取...")
-        input("按回车继续...")
+        url = "https://m.anjuke.com/bj/sale/S3449979172707338/"
+        try:
+            RateLimitHandler.solve_anjuke_verification(url)
+            # 重启当前脚本
+            logger.info("解决完IP限流，重启脚本...")
+            os.execv(sys.executable, ['python'] + sys.argv)
+        except Exception as e:
+            logger.error(f"处理验证失败: {e}")
 
 
 class HouseDetailParser:
