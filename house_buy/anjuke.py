@@ -246,7 +246,9 @@ class AnjukeScraper:
 
     def __init__(self):
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Referer': 'https://www.anjuke.com/'
         }
         self.session = requests.Session()
         self.session.headers.update(self.headers)
