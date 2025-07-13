@@ -368,7 +368,7 @@ class AnjukeScraper:
                             f"单价{house_info.price_per_sqm} - 总价{house_info.total_price}")
             else:
                 unmatched_count += 1
-                logger.debug(f"✗ 跳过房源: {house_info.community} (目标: {community_name})")
+                logger.info(f"✗ 跳过房源: {house_info.community} (目标: {community_name})")
 
                 if unmatched_count >= 4:
                     logger.warning("连续4个房源不匹配，停止当前页面抓取")
