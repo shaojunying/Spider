@@ -1,7 +1,109 @@
-/.idea/
-/*/config.py
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 输出文件
+output/
+sport/output/
+house_buy/output/
+house_buy/output-bak/
+
+# 临时文件
+*.tmp
+*.temp
+paste.txt
+test.py
+
+# 配置文件（包含敏感信息）
+config.py
+setting.py
+*.py.example
+!config.py.example
+!setting.py.example
+
+# 数据文件
+*.csv
+*.xlsx
+*.json
+*.xml
+*.zip
+
+# 截图和图片
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# 浏览器相关
+*.chls
+
+# 项目特定
 /laundry-machine/img/
 /*/data
-.DS_STORE
-*.log
-*.csv
+
+# 其他
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 备份文件
+*.bak
+*~
