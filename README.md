@@ -19,19 +19,29 @@
 
 ```
 Spider/
-├── common/                 # 🎯 公共模块
-│   ├── logger.py          # 统一日志配置
-│   ├── http_client.py     # HTTP请求客户端
-│   ├── utils.py           # 通用工具函数
-│   └── base_scraper.py    # 基础爬虫类
-├── house_buy/             # 🏠 房源数据爬虫
-├── sport/                 # ⚽ 体育赛事数据
-├── hospital/              # 🏥 医院挂号脚本
-├── laundry-machine/       # 🧺 洗衣机预约
-├── course_selection/      # 📚 选课脚本
-├── check_course_result/   # 📊 成绩查询
-├── house_door/           # 🚪 门禁控制
-└── requirements.txt       # 依赖管理
+├── common/                      # 🎯 公共模块
+│   ├── logger.py               # 统一日志配置
+│   ├── http_client.py          # HTTP请求客户端
+│   ├── utils.py                # 通用工具函数
+│   └── base_scraper.py         # 基础爬虫类
+├── house_buy/                   # 🏠 房源数据爬虫
+├── sport/                       # ⚽ 体育赛事数据 (46+个项目)
+├── hospital/                    # 🏥 医院挂号脚本
+├── laundry-machine/             # 🧺 洗衣机预约
+├── course_selection/            # 📚 选课脚本
+├── check_course_result/         # 📊 成绩查询
+├── check_empty_classroom/       # 🏫 空教室查询
+├── bupt_second_class_ticket/    # 🎫 第二课堂抢票
+├── house_door/                  # 🚪 门禁控制
+├── github-oauth2/               # 🔐 GitHub OAuth2认证
+├── gym.py                       # 💪 健身房预约
+├── pdf/                         # 📄 PDF文档处理
+├── shell/                       # 🐚 Shell脚本工具
+├── io-multiplexing/             # ⚡ IO多路复用示例
+├── test/                        # 🧪 测试脚本
+├── byr-bbs/                     # 💬 BYR论坛相关
+├── spider_for_finance.py        # 💰 财经数据爬虫
+└── requirements.txt             # 📦 依赖管理
 ```
 
 ## 🚀 快速开始
@@ -151,6 +161,43 @@ U净洗衣微信公众号自动预约脚本，支持验证码识别。
 ### 💰 财经数据 (`spider_for_finance.py`)
 
 财联社快讯数据采集，支持实时金融资讯抓取。
+
+### 🔐 GitHub OAuth2认证 (`github-oauth2/`)
+
+GitHub OAuth2认证服务器实现，支持GitHub应用授权登录。
+
+### 💪 健身房预约 (`gym.py`)
+
+健身房自动预约脚本，支持多线程并发预约多个时间段。
+
+### 📄 PDF文档处理 (`pdf/`)
+
+PDF文档内容抓取和处理工具，支持批量PDF文件解析。
+
+### 🐚 Shell脚本工具 (`shell/`)
+
+Shell脚本相关工具集，包含文本处理和数据提取功能。
+
+**功能特点:**
+- ✅ 提取指定分隔符之间的内容
+- ✅ CSV格式数据处理
+- ✅ 批量文本处理
+
+### ⚡ IO多路复用示例 (`io-multiplexing/`)
+
+网络编程IO多路复用的客户端和服务器示例代码。
+
+### 🧪 测试脚本 (`test/`)
+
+项目测试脚本集合，包含2FA认证和课程相关测试。
+
+**包含功能:**
+- `2fa.py` - 双因子认证(TOTP)生成器
+- `course.py` - 课程相关功能测试
+
+### 💬 BYR论坛相关 (`byr-bbs/`)
+
+北邮人论坛相关功能模块(暂时为空，预留扩展)。
 
 ## 🛠️ 开发指南
 
