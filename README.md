@@ -18,30 +18,35 @@
 ## 🏗️ 项目架构
 
 ```
-Spider/
-├── common/                      # 🎯 公共模块
-│   ├── logger.py               # 统一日志配置
-│   ├── http_client.py          # HTTP请求客户端
-│   ├── utils.py                # 通用工具函数
-│   └── base_scraper.py         # 基础爬虫类
-├── house_buy/                   # 🏠 房源数据爬虫
-├── sport/                       # ⚽ 体育赛事数据 (46+个项目)
-├── hospital/                    # 🏥 医院挂号脚本
-├── laundry-machine/             # 🧺 洗衣机预约
-├── course_selection/            # 📚 选课脚本
-├── check_course_result/         # 📊 成绩查询
-├── check_empty_classroom/       # 🏫 空教室查询
-├── bupt_second_class_ticket/    # 🎫 第二课堂抢票
-├── house_door/                  # 🚪 门禁控制
-├── github-oauth2/               # 🔐 GitHub OAuth2认证
-├── gym.py                       # 💪 健身房预约
-├── pdf/                         # 📄 PDF文档处理
-├── shell/                       # 🐚 Shell脚本工具
-├── io-multiplexing/             # ⚡ IO多路复用示例
-├── test/                        # 🧪 测试脚本
-├── byr-bbs/                     # 💬 BYR论坛相关
-├── spider_for_finance.py        # 💰 财经数据爬虫
-└── requirements.txt             # 📦 依赖管理
+Spider/                              # 扁平化的2层目录结构
+├── 🎯 core/                         # 核心框架
+│   ├── common/                      # 公共模块 (日志、HTTP、工具函数)
+│   └── base/                        # 基础类和接口
+├── 🕷️ scrapers/                     # 爬虫项目
+│   ├── house_price/                 # 房源价格监控
+│   ├── sports_data/                 # 体育赛事数据 (46+个项目)
+│   ├── finance_news/                # 财经资讯爬虫
+│   └── pdf_extract/                 # PDF文档提取
+├── 🏫 campus/                       # 校园项目
+│   ├── course_selection/            # 选课系统
+│   ├── grade_check/                 # 成绩查询
+│   ├── empty_classroom/             # 空教室查询
+│   ├── second_class/                # 第二课堂抢票
+│   └── gym_booking/                 # 健身房预约
+├── 🤖 automation/                   # 自动化项目
+│   ├── hospital_booking/            # 医院挂号
+│   ├── laundry_booking/             # 洗衣机预约
+│   ├── door_control/                # 门禁控制
+│   └── oauth2_auth/                 # OAuth2认证
+├── 🛠️ tools/                        # 工具项目
+│   ├── text_processing/             # 文本处理工具
+│   └── network_examples/            # 网络IO示例
+├── 👥 community/                    # 社区项目
+│   └── byr_forum/                   # 北邮人论坛
+├── 📚 docs/                         # 文档资源
+├── 🧪 tests/                        # 测试脚本
+├── 📊 output/                       # 输出目录
+└── 📝 logs/                         # 日志目录
 ```
 
 ## 🚀 快速开始
@@ -57,7 +62,7 @@ pip install -r requirements.txt
 #### 1. 使用公共组件
 
 ```python
-from common import get_logger, HttpClient, save_to_csv
+from core.common import get_logger, HttpClient, save_to_csv
 
 # 统一日志
 logger = get_logger('my_scraper', 'output')
@@ -74,7 +79,7 @@ save_to_csv(data, 'output/data.csv')
 #### 2. 继承基础爬虫类
 
 ```python
-from common.base_scraper import SportScraper
+from core.common.base_scraper import SportScraper
 
 class MyScraper(SportScraper):
     def scrape(self):
@@ -88,7 +93,7 @@ data = scraper.run(save_format='xlsx')
 
 ## 📦 功能模块
 
-### 🏠 房源信息爬虫 (`house_buy/`)
+### 🏠 房源信息爬虫 (`scrapers/house_price/`)
 
 监控房源价格变化，支持多个小区数据采集和历史价格分析。
 
@@ -99,12 +104,11 @@ data = scraper.run(save_format='xlsx')
 - 📊 数据可视化支持
 
 **使用示例:**
-```python
-# 使用重构版本
-python house_buy/anjuke_refactored.py
+```bash
+python scrapers/house_price/anjuke_refactored.py
 ```
 
-### ⚽ 体育赛事数据 (`sport/`)
+### ⚽ 体育赛事数据 (`scrapers/sports_data/`)
 
 采集46+个体育项目的赛事数据，包括体操、游泳、网球等。
 
@@ -118,76 +122,73 @@ python house_buy/anjuke_refactored.py
 - 等等...
 
 **使用示例:**
-```python
-# 体操数据采集 (重构版本)
-python sport/py/1.gymnastics_refactored.py
+```bash
+python scrapers/sports_data/py/1.gymnastics_refactored.py
 ```
 
-### 🏥 医院挂号脚本 (`hospital/`)
+### 🏥 医院挂号 (`automation/hospital_booking/`)
 
 自动化医院预约挂号，支持多线程并发预约。
 
-### 🧺 洗衣机预约 (`laundry-machine/`)
+### 🧺 洗衣机预约 (`automation/laundry_booking/`)
 
 U净洗衣微信公众号自动预约脚本，支持验证码识别。
 
-### 📚 校园服务
+### 🚪 门禁控制 (`automation/door_control/`)
 
-#### 选课脚本 (`course_selection/`)
+《守望领域》APP门禁模拟脚本，支持权限验证和远程开门。
+
+![门禁流程图](docs/开门脚本流程图.drawio.png)
+
+### 🔐 OAuth2认证 (`automation/oauth2_auth/`)
+
+OAuth2认证服务器实现，支持GitHub等平台应用授权登录。
+
+### 💰 财经数据 (`scrapers/finance_news/`)
+
+财联社快讯数据采集，支持实时金融资讯抓取。
+
+### 📄 PDF文档处理 (`scrapers/pdf_extract/`)
+
+PDF文档内容抓取和处理工具，支持批量PDF文件解析。
+
+### 📚 校园项目
+
+#### 选课系统 (`campus/course_selection/`)
 - ✅ 自动查询课程余量
 - ✅ 自动选课
 - ✅ 循环监控直到选课成功
 
-#### 成绩查询 (`check_course_result/`)
+#### 成绩查询 (`campus/grade_check/`)
 - ✅ 自动登录教务系统
 - ✅ 成绩变化邮件通知
 - ✅ 支持定时任务 (crontab)
 
-#### 空教室查询 (`check_empty_classroom/`)
+#### 空教室查询 (`campus/empty_classroom/`)
 - ✅ 查询1-14周课程安排
 - ✅ 按时间段筛选空教室
 - ✅ 支持多校区查询
 
-#### 第二课堂 (`bupt_second_class_ticket/`)
+#### 第二课堂 (`campus/second_class/`)
 - ✅ 自动抢票功能
 - ✅ 支持多活动监控
 
-### 🚪 门禁控制 (`house_door/`)
+#### 健身房预约 (`campus/gym_booking/`)
+- ✅ 多线程并发预约
+- ✅ 支持多个时间段预约
 
-《守望领域》APP门禁模拟脚本，支持权限验证和远程开门。
+### 🛠️ 工具项目
 
-![门禁流程图](img/开门脚本流程图.drawio.png)
-
-### 💰 财经数据 (`spider_for_finance.py`)
-
-财联社快讯数据采集，支持实时金融资讯抓取。
-
-### 🔐 GitHub OAuth2认证 (`github-oauth2/`)
-
-GitHub OAuth2认证服务器实现，支持GitHub应用授权登录。
-
-### 💪 健身房预约 (`gym.py`)
-
-健身房自动预约脚本，支持多线程并发预约多个时间段。
-
-### 📄 PDF文档处理 (`pdf/`)
-
-PDF文档内容抓取和处理工具，支持批量PDF文件解析。
-
-### 🐚 Shell脚本工具 (`shell/`)
-
-Shell脚本相关工具集，包含文本处理和数据提取功能。
-
-**功能特点:**
+#### 文本处理工具 (`tools/text_processing/`)
 - ✅ 提取指定分隔符之间的内容
 - ✅ CSV格式数据处理
 - ✅ 批量文本处理
 
-### ⚡ IO多路复用示例 (`io-multiplexing/`)
+#### 网络示例 (`tools/network_examples/`)
+- ✅ IO多路复用客户端和服务器示例
+- ✅ 网络编程学习代码
 
-网络编程IO多路复用的客户端和服务器示例代码。
-
-### 🧪 测试脚本 (`test/`)
+### 🧪 测试脚本 (`tests/`)
 
 项目测试脚本集合，包含2FA认证和课程相关测试。
 
@@ -195,9 +196,9 @@ Shell脚本相关工具集，包含文本处理和数据提取功能。
 - `2fa.py` - 双因子认证(TOTP)生成器
 - `course.py` - 课程相关功能测试
 
-### 💬 BYR论坛相关 (`byr-bbs/`)
+### 💬 论坛相关 (`community/byr_forum/`)
 
-北邮人论坛相关功能模块(暂时为空，预留扩展)。
+北邮人论坛相关功能模块(预留扩展)。
 
 ## 🛠️ 开发指南
 
@@ -205,7 +206,7 @@ Shell脚本相关工具集，包含文本处理和数据提取功能。
 
 1. **继承基础类:**
 ```python
-from common.base_scraper import BaseScraper
+from core.common.base_scraper import BaseScraper
 
 class MyNewScraper(BaseScraper):
     def __init__(self):
@@ -217,10 +218,10 @@ class MyNewScraper(BaseScraper):
 ```
 
 2. **使用公共组件:**
-- `get_logger()` - 统一日志
-- `HttpClient()` - HTTP请求
-- `save_to_csv()` - 数据保存
-- `normalize_price_text()` - 价格文本处理
+- `core.common.get_logger()` - 统一日志
+- `core.common.HttpClient()` - HTTP请求
+- `core.common.save_to_csv()` - 数据保存
+- `core.common.normalize_price_text()` - 价格文本处理
 
 ### 配置管理
 
@@ -239,7 +240,7 @@ OUTPUT_DIR = "output"
 - ❌ 47个文件重复HTTP请求代码 → ✅ 统一HTTP客户端
 - ❌ 46个sport脚本结构混乱 → ✅ 基于基类的统一架构
 
-详细信息请参考: [📖 重构指南](REFACTOR_GUIDE.md)
+详细信息请参考: [📖 重构指南](docs/REFACTOR_GUIDE.md) 和 [📋 目录重构说明](docs/DIRECTORY_RESTRUCTURE.md)
 
 ## 📊 数据输出
 
