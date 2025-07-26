@@ -15,7 +15,7 @@ isort>=5.10.0,<6.0.0
 mypy>=1.0.0,<2.0.0
 
 # 代码复杂度分析
-flake8-complexity>=0.9.1
+mccabe>=0.7.0  # flake8的复杂度检查插件
 flake8-docstrings>=1.6.0
 flake8-import-order>=0.18.1
 
