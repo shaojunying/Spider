@@ -12,6 +12,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import logging
 
+from .exceptions import HttpError, SecurityError, NetworkError, TimeoutError
+from .security import security_validator
+
 
 class HttpClient:
     """统一的HTTP客户端"""
@@ -80,6 +83,13 @@ class HttpClient:
         **kwargs
     ) -> requests.Response:
         """GET请求"""
+        # 安全验证
+        try:
+            security_validator.validate_url(url)
+        except SecurityError as e:
+            self.logger.error(f"URL安全验证失败: {e}")
+            raise
+        
         self._delay()
         
         try:
@@ -95,9 +105,18 @@ class HttpClient:
             response.raise_for_status()
             return response
             
+        except requests.exceptions.Timeout as e:
+            self.logger.error(f"GET请求超时 {url}: {e}")
+            raise TimeoutError(f"请求超时: {url}", timeout_seconds=self.timeout)
+        except requests.exceptions.ConnectionError as e:
+            self.logger.error(f"GET连接错误 {url}: {e}")
+            raise NetworkError(f"网络连接失败: {url}")
+        except requests.exceptions.HTTPError as e:
+            self.logger.error(f"GET HTTP错误 {url}: {e}")
+            raise HttpError(f"HTTP错误: {e}", status_code=e.response.status_code, url=url)
         except requests.exceptions.RequestException as e:
             self.logger.error(f"GET请求失败 {url}: {e}")
-            raise
+            raise HttpError(f"请求失败: {e}", url=url)
     
     def post(
         self,

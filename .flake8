@@ -1,0 +1,60 @@
+[flake8]
+# 最大行长度
+max-line-length = 88
+
+# 最大圈复杂度
+max-complexity = 10
+
+# 忽略的错误类型
+ignore = 
+    # E203: whitespace before ':'
+    E203,
+    # W503: line break before binary operator
+    W503,
+    # E501: line too long (handled by black)
+    E501,
+    # F401: imported but unused (in __init__.py files)
+    F401
+
+# 排除的文件和目录
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .env,
+    build,
+    dist,
+    .eggs,
+    *.egg-info,
+    .tox,
+    .coverage,
+    htmlcov,
+    .pytest_cache,
+    .mypy_cache,
+    migrations,
+    node_modules
+
+# 每行错误数统计
+count = True
+
+# 显示源代码
+show-source = True
+
+# 统计信息
+statistics = True
+
+# 选择特定的错误类型进行检查
+select = E,W,F,C
+
+# 文件名模式
+filename = *.py
+
+# 扩展插件
+extend-ignore = 
+    # 允许在__init__.py中未使用的导入
+    F401
+
+# 错误格式
+format = %(path)s:%(row)d:%(col)d: %(code)s %(text)s

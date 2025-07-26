@@ -1,0 +1,44 @@
+# 开发环境依赖文件
+# 安装: pip install -r requirements-dev.txt
+
+# 测试框架
+pytest>=7.0.0,<8.0.0
+pytest-cov>=4.0.0,<5.0.0
+pytest-asyncio>=0.21.0,<1.0.0
+pytest-mock>=3.10.0,<4.0.0
+pytest-xdist>=3.0.0,<4.0.0  # 并行测试
+
+# 代码质量和格式化
+black>=22.0.0,<24.0.0
+flake8>=5.0.0,<7.0.0
+isort>=5.10.0,<6.0.0
+mypy>=1.0.0,<2.0.0
+
+# 代码复杂度分析
+flake8-complexity>=0.9.1
+flake8-docstrings>=1.6.0
+flake8-import-order>=0.18.1
+
+# 安全检查
+bandit>=1.7.0,<2.0.0
+safety>=2.0.0,<3.0.0
+
+# Git hooks
+pre-commit>=2.20.0,<4.0.0
+
+# 文档生成
+sphinx>=5.0.0,<7.0.0
+sphinx-rtd-theme>=1.0.0,<2.0.0
+
+# 性能分析
+memory-profiler>=0.60.0
+line-profiler>=4.0.0
+
+# 调试工具
+ipdb>=0.13.0
+rich>=12.0.0  # 美化输出
+
+# 类型检查辅助
+types-requests>=2.25.0
+types-beautifulsoup4>=4.9.0
+types-pillow>=8.0.0
