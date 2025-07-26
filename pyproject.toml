@@ -58,12 +58,6 @@ addopts = [
     "-ra",                          # 显示测试摘要
     "--strict-markers",             # 严格标记模式
     "--strict-config",              # 严格配置模式
-    "--cov=core",                   # 覆盖率检查 core 目录
-    "--cov=scrapers",               # 覆盖率检查 scrapers 目录
-    "--cov=automation",             # 覆盖率检查 automation 目录
-    "--cov=campus",                 # 覆盖率检查 campus 目录
-    "--cov-report=term-missing",    # 终端显示缺失的覆盖行
-    "--cov-report=html:htmlcov",    # 生成 HTML 覆盖率报告
 ]
 testpaths = ["tests"]               # 测试文件路径
 python_files = ["test_*.py", "*_test.py"]
