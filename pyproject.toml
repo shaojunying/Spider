@@ -29,6 +29,10 @@ dependencies = [
     "ipython>=7.0.0",
 ]
 
+# 包发现配置（解决多顶级目录问题）
+[tool.setuptools.packages.find]
+include = ["core*", "scrapers*", "automation*", "campus*", "community*", "tools*"]
+
 # 开发依赖（可选安装）
 [project.optional-dependencies]
 dev = [
