@@ -1,0 +1,3586 @@
+[
+  {
+    "event_id": "56757",
+    "dates": "27 Jan-01 Feb",
+    "location": "Schweitzer Mountain Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "TRA • FIS",
+    "races": "8xDH 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57710",
+    "dates": "27 Jan-01 Feb",
+    "location": "Kashkulak (KGZ)",
+    "country": "UZB",
+    "discipline": "AL",
+    "event_type": "FIS • NJR",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55627",
+    "dates": "28 Jan-01 Feb",
+    "location": "Orcieres Merlette 1850",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "TRA • EC",
+    "races": "4xDH SG",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56157",
+    "dates": "29 Jan-01 Feb",
+    "location": "La Clusaz - Grand Bornand",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56372",
+    "dates": "31 Jan-01 Feb",
+    "location": "Kamui",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56758",
+    "dates": "31 Jan-01 Feb",
+    "location": "Smugglers Notch Ski Club",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55602",
+    "dates": "31 Jan-02 Feb",
+    "location": "",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "TRA",
+    "races": "2xDH",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56325",
+    "dates": "31 Jan-02 Feb",
+    "location": "Duved",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "NJR • FIS • ENL",
+    "races": "6xGS 2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56371",
+    "dates": "31 Jan-02 Feb",
+    "location": "Zao Liza",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56712",
+    "dates": "31 Jan-07 Feb",
+    "location": "Alpensia Resort",
+    "country": "KOR",
+    "discipline": "AL",
+    "event_type": "FEC",
+    "races": "8xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57665",
+    "dates": "01 Feb",
+    "location": "Kronplatz (ITA)",
+    "country": "ALB",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56009",
+    "dates": "01-02 Feb",
+    "location": "Ounasvaara",
+    "country": "FIN",
+    "discipline": "AL",
+    "event_type": "FIS • NJC",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56076",
+    "dates": "01-02 Feb",
+    "location": "La Molina",
+    "country": "ESP",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56167",
+    "dates": "01-02 Feb",
+    "location": "Les Menuires",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56313",
+    "dates": "01-02 Feb",
+    "location": "Hassela",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56373",
+    "dates": "01-02 Feb",
+    "location": "Kamui",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56481",
+    "dates": "01-02 Feb",
+    "location": "Lenzerheide",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56582",
+    "dates": "01-02 Feb",
+    "location": "Hochficht",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56610",
+    "dates": "01-02 Feb",
+    "location": "Les Diablerets",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56759",
+    "dates": "01-02 Feb",
+    "location": "Keystone Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56774",
+    "dates": "01-02 Feb",
+    "location": "Stoneham",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57100",
+    "dates": "01-02 Feb",
+    "location": "Val Gardena - Groeden",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57134",
+    "dates": "01-02 Feb",
+    "location": "West Mountain",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57230",
+    "dates": "01-02 Feb",
+    "location": "San Vito di Cadore",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57363",
+    "dates": "01-02 Feb",
+    "location": "Dalvik",
+    "country": "ISL",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "4xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56981",
+    "dates": "01-03 Feb",
+    "location": "Bardonecchia",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56834",
+    "dates": "02 Feb",
+    "location": "Saskadena Six",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "SL",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56534",
+    "dates": "03 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56839",
+    "dates": "03 Feb",
+    "location": "Stowe Mountain Resort / Spruce Peak",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "GS",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57661",
+    "dates": "03 Feb",
+    "location": "",
+    "country": "IRL",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55628",
+    "dates": "03-04 Feb",
+    "location": "Soldeu",
+    "country": "AND",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55796",
+    "dates": "03-04 Feb",
+    "location": "Spindleruv Mlyn",
+    "country": "CZE",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56161",
+    "dates": "03-04 Feb",
+    "location": "",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56482",
+    "dates": "03-04 Feb",
+    "location": "Hoch Ybrig",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS • NJC",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56713",
+    "dates": "03-04 Feb",
+    "location": "Yongpyong Resort",
+    "country": "KOR",
+    "discipline": "AL",
+    "event_type": "FEC",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56827",
+    "dates": "03-04 Feb",
+    "location": "Les Diablerets",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56835",
+    "dates": "03-04 Feb",
+    "location": "Stratton Mountain Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56838",
+    "dates": "03-04 Feb",
+    "location": "Bridger Bowl Ski Area",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56913",
+    "dates": "03-04 Feb",
+    "location": "Orcieres Merlette",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56943",
+    "dates": "03-04 Feb",
+    "location": "West Mountain",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57247",
+    "dates": "03-04 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57035",
+    "dates": "03-06 Feb",
+    "location": "Szczawnica",
+    "country": "POL",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56374",
+    "dates": "03-07 Feb",
+    "location": "Sugadairakohgen Kogen",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56787",
+    "dates": "03-09 Feb",
+    "location": "Kimberley, BC",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "TRA • NAC",
+    "races": "10xDH 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57590",
+    "dates": "04 Feb",
+    "location": "Koralpe  (AUT)",
+    "country": "CRO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57664",
+    "dates": "04 Feb",
+    "location": "",
+    "country": "ALB",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56431",
+    "dates": "04-05 Feb",
+    "location": "Ravna Planina, Pale",
+    "country": "BIH",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57132",
+    "dates": "04-05 Feb",
+    "location": "Kashkulak",
+    "country": "KGZ",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56011",
+    "dates": "04-06 Feb",
+    "location": "Suomu",
+    "country": "FIN",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "6xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56460",
+    "dates": "04-07 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "TRA • FIS",
+    "races": "4xDH",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57256",
+    "dates": "04-07 Feb",
+    "location": "Aprica",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55614",
+    "dates": "04-16 Feb",
+    "location": "Saalbach",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "TRA • WSC • FQUA",
+    "races": "8xDH 4xSL 4xGS 2xSG 2xTC TP",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57311",
+    "dates": "05 Feb",
+    "location": "Whiteface Mountain (USA)",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55981",
+    "dates": "05-06 Feb",
+    "location": "Koralpe (AUT)",
+    "country": "CRO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56420",
+    "dates": "05-06 Feb",
+    "location": "Ravna Planina, Pale",
+    "country": "BIH",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56785",
+    "dates": "05-06 Feb",
+    "location": "Hinterstoder",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57113",
+    "dates": "05-06 Feb",
+    "location": "",
+    "country": "ARM",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56982",
+    "dates": "05-07 Feb",
+    "location": "Bardonecchia",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "GS 2xSG",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57003",
+    "dates": "06 Feb",
+    "location": "",
+    "country": "EST",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55629",
+    "dates": "06-07 Feb",
+    "location": "Baqueira Beret",
+    "country": "ESP",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56447",
+    "dates": "06-07 Feb",
+    "location": "Spindleruv Mlyn",
+    "country": "CZE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56497",
+    "dates": "06-07 Feb",
+    "location": "Gstaad/Huble",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56571",
+    "dates": "06-07 Feb",
+    "location": "",
+    "country": "LAT",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "8xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57310",
+    "dates": "06-07 Feb",
+    "location": "Whiteface Mountain (USA)",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56808",
+    "dates": "06-08 Feb",
+    "location": "Vassfjellet",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "NJC • FIS",
+    "races": "6xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56843",
+    "dates": "06-08 Feb",
+    "location": "Lutsen Mountains",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "6xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56535",
+    "dates": "06-09 Feb",
+    "location": "Garmisch-Partenkirchen (GER)",
+    "country": "BRA",
+    "discipline": "AL",
+    "event_type": "NC • TRA",
+    "races": "6xDH 2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56723",
+    "dates": "06-09 Feb",
+    "location": "Garmisch Patenkichen",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "TRA • NJC",
+    "races": "6xDH 2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56234",
+    "dates": "07-08 Feb",
+    "location": "Dartmouth Skiway",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56504",
+    "dates": "07-08 Feb",
+    "location": "Catamount Alpine Racing Club",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56583",
+    "dates": "07-08 Feb",
+    "location": "Mellau",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56719",
+    "dates": "07-08 Feb",
+    "location": "Petzen (AUT)",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57073",
+    "dates": "07-08 Feb",
+    "location": "Folgaria",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57006",
+    "dates": "08 Feb",
+    "location": "Ruka (FIN)",
+    "country": "EST",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56015",
+    "dates": "08-09 Feb",
+    "location": "Ruka",
+    "country": "FIN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56077",
+    "dates": "08-09 Feb",
+    "location": "",
+    "country": "ESP",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56168",
+    "dates": "08-09 Feb",
+    "location": "",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56256",
+    "dates": "08-09 Feb",
+    "location": "Yabuli Ski Resort",
+    "country": "CHN",
+    "discipline": "AL",
+    "event_type": "AWG",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56341",
+    "dates": "08-09 Feb",
+    "location": "Klovsjo",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56357",
+    "dates": "08-09 Feb",
+    "location": "Lulea",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56461",
+    "dates": "08-09 Feb",
+    "location": "Piancavallo",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56483",
+    "dates": "08-09 Feb",
+    "location": "Soerenberg",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": true,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56983",
+    "dates": "08-09 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57082",
+    "dates": "08-09 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS • CIT",
+    "races": "2xSL 6xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57248",
+    "dates": "08-09 Feb",
+    "location": "Monte Pora",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57505",
+    "dates": "08-09 Feb",
+    "location": "Berkshire East / Catamount",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56279",
+    "dates": "08-10 Feb",
+    "location": "Utah Olympic Park",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56846",
+    "dates": "08-11 Feb",
+    "location": "Whiteface Mountain",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56506",
+    "dates": "09 Feb",
+    "location": "Middlebury College Snow Bowl",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "SL",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56844",
+    "dates": "09 Feb",
+    "location": "Lutsen Mountains",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55668",
+    "dates": "09-10 Feb",
+    "location": "Oberjoch",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56847",
+    "dates": "09-10 Feb",
+    "location": "Berkshire East Mountain Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56809",
+    "dates": "09-11 Feb",
+    "location": "Oppdal",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "NJC • FIS",
+    "races": "6xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57264",
+    "dates": "10 Feb",
+    "location": "Val Casies",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56935",
+    "dates": "10-11 Feb",
+    "location": "",
+    "country": "ROU",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56984",
+    "dates": "10-11 Feb",
+    "location": "Bielmonte",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57110",
+    "dates": "10-11 Feb",
+    "location": "Tsaghkadzor",
+    "country": "ARM",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56169",
+    "dates": "10-12 Feb",
+    "location": "Font Romeu Pyrenees 2000",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56840",
+    "dates": "10-12 Feb",
+    "location": "Stowe Mountain Resort / Spruce Peak",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "SL 2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55630",
+    "dates": "10-13 Feb",
+    "location": "Crans Montana",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "TRA • EC",
+    "races": "4xDH SG",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55954",
+    "dates": "10-16 Feb",
+    "location": "Bakuriani",
+    "country": "GEO",
+    "discipline": "AL",
+    "event_type": "EYOF",
+    "races": "2xSL 2xGS TP",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56536",
+    "dates": "11-12 Feb",
+    "location": "Valgrisenche",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57263",
+    "dates": "11-12 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56375",
+    "dates": "11-13 Feb",
+    "location": "Sugadairakohgen",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56702",
+    "dates": "11-14 Feb",
+    "location": "Norquay, AB",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56848",
+    "dates": "11-14 Feb",
+    "location": "Utah Olympic Park",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56849",
+    "dates": "11-14 Feb",
+    "location": "Snowbird, UT",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56877",
+    "dates": "12-13 Feb",
+    "location": "Melchsee Frutt",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56878",
+    "dates": "12-13 Feb",
+    "location": "Les Diablerets",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56916",
+    "dates": "12-13 Feb",
+    "location": "Kreischberg",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57231",
+    "dates": "12-13 Feb",
+    "location": "Cortina d Ampezzo",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56602",
+    "dates": "12-14 Feb",
+    "location": "St. Lambrecht",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xGS 2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56613",
+    "dates": "12-17 Feb",
+    "location": "Bormio (ITA)",
+    "country": "GBR",
+    "discipline": "AL",
+    "event_type": "FIS • NJR",
+    "races": "4xSL 4xGS 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56216",
+    "dates": "13-14 Feb",
+    "location": "Bardonecchia",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xSG",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56217",
+    "dates": "13-14 Feb",
+    "location": "Soldeu - GrandValira",
+    "country": "AND",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56537",
+    "dates": "13-14 Feb",
+    "location": "Gressoney - La Trinite",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56850",
+    "dates": "13-14 Feb",
+    "location": "Waterville Valley",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56855",
+    "dates": "13-14 Feb",
+    "location": "Jiminy Peak Mountain Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57295",
+    "dates": "13-16 Feb",
+    "location": "Crabbe Mountain",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56457",
+    "dates": "14 Feb",
+    "location": "Limone Piemonte",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56967",
+    "dates": "14 Feb",
+    "location": "Zinal",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSG",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56462",
+    "dates": "14-15 Feb",
+    "location": "Forni di Sopra",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56946",
+    "dates": "14-15 Feb",
+    "location": "Middlebury College Snow Bowl",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57249",
+    "dates": "14-15 Feb",
+    "location": "",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56164",
+    "dates": "15-16 Feb",
+    "location": "",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56165",
+    "dates": "15-16 Feb",
+    "location": "Kranjska Gora",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56171",
+    "dates": "15-16 Feb",
+    "location": "Prapoutel les 7 Laux",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56344",
+    "dates": "15-16 Feb",
+    "location": "Arvidsjaur",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56350",
+    "dates": "15-16 Feb",
+    "location": "Bollnaes",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56449",
+    "dates": "15-16 Feb",
+    "location": "Bila v Beskydech",
+    "country": "CZE",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56653",
+    "dates": "15-16 Feb",
+    "location": "Sudelfed",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "NJC • FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56856",
+    "dates": "15-16 Feb",
+    "location": "Proctor Ski Area",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57076",
+    "dates": "15-16 Feb",
+    "location": "San Martino di Castrozza",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57101",
+    "dates": "15-16 Feb",
+    "location": "Gitschberg Jochtal - Rio Pusteria",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57109",
+    "dates": "15-16 Feb",
+    "location": "Kongsberg",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56448",
+    "dates": "17-18 Feb",
+    "location": "Karolinka",
+    "country": "CZE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56539",
+    "dates": "17-18 Feb",
+    "location": "Berchtesgaden (GER)",
+    "country": "BRA",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56540",
+    "dates": "17-18 Feb",
+    "location": "Pila - Gressan",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56706",
+    "dates": "17-18 Feb",
+    "location": "Flumserberg",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56858",
+    "dates": "17-18 Feb",
+    "location": "Beaver Creek Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57274",
+    "dates": "17-20 Feb",
+    "location": "Pfelders",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55982",
+    "dates": "18-19 Feb",
+    "location": "Soriska Planina (SLO)",
+    "country": "CRO",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56934",
+    "dates": "18-21 Feb",
+    "location": "Poiana Brasov",
+    "country": "ROU",
+    "discipline": "AL",
+    "event_type": "FIS • NC",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57112",
+    "dates": "18-21 Feb",
+    "location": "Tsaghkadzor",
+    "country": "ARM",
+    "discipline": "AL",
+    "event_type": "FIS • NC",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56655",
+    "dates": "19 Feb",
+    "location": "Jenner",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55669",
+    "dates": "19-20 Feb",
+    "location": "Sarntal",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xSG",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56353",
+    "dates": "19-20 Feb",
+    "location": "Taernaby",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56503",
+    "dates": "19-20 Feb",
+    "location": "Beckenried Klewenalp",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56584",
+    "dates": "19-20 Feb",
+    "location": "Zams",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS • NJR",
+    "races": "4xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56810",
+    "dates": "19-20 Feb",
+    "location": "Voss",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57111",
+    "dates": "19-20 Feb",
+    "location": "Tsaghkadzor",
+    "country": "ARM",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57411",
+    "dates": "19-20 Feb",
+    "location": "Kupres (BIH)",
+    "country": "CRO",
+    "discipline": "AL",
+    "event_type": "NC • NJC • FIS",
+    "races": "8xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56376",
+    "dates": "19-21 Feb",
+    "location": "MontDeus hidakuraiyama",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56377",
+    "dates": "19-22 Feb",
+    "location": "Naeba",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56473",
+    "dates": "19-22 Feb",
+    "location": "Cedars ski Resort",
+    "country": "LBN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56945",
+    "dates": "19-22 Feb",
+    "location": "Alyeska Resort",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56585",
+    "dates": "19-23 Feb",
+    "location": "Pass Thurn",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS • NJR",
+    "races": "6xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56603",
+    "dates": "19-24 Feb",
+    "location": "Malam Jabba",
+    "country": "PAK",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "5xSL 5xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56572",
+    "dates": "20-21 Feb",
+    "location": "Sigulda",
+    "country": "LAT",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "8xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57037",
+    "dates": "20-21 Feb",
+    "location": "Szczawnica",
+    "country": "POL",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55603",
+    "dates": "20-23 Feb",
+    "location": "Crans Montana",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "TRA • WC",
+    "races": "DH SG",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56776",
+    "dates": "20-23 Feb",
+    "location": "Bromont, QC",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56777",
+    "dates": "20-23 Feb",
+    "location": "Owls Head",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57232",
+    "dates": "20-23 Feb",
+    "location": "Folgaria",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55631",
+    "dates": "21-22 Feb",
+    "location": "Bjelasnica / Sarajevo",
+    "country": "BIH",
+    "discipline": "AL",
+    "event_type": "EC",
+    "races": "2xSG",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56305",
+    "dates": "21-22 Feb",
+    "location": "Mittersill Canon Mountain",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "UNI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56514",
+    "dates": "21-22 Feb",
+    "location": "Uludag / Bursa",
+    "country": "TUR",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57049",
+    "dates": "21-22 Feb",
+    "location": "Mokra Gora",
+    "country": "SRB",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55604",
+    "dates": "21-23 Feb",
+    "location": "Sestriere",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "WC",
+    "races": "SL 2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57250",
+    "dates": "21-23 Feb",
+    "location": "Chiesa Valmalenco",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "2xSL 2xGS 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56070",
+    "dates": "22-23 Feb",
+    "location": "Pas de La Casa",
+    "country": "ESP",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56166",
+    "dates": "22-23 Feb",
+    "location": "Stari vrh",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56347",
+    "dates": "22-23 Feb",
+    "location": "Lycksele",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56355",
+    "dates": "22-23 Feb",
+    "location": "Borlaenge",
+    "country": "SWE",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56381",
+    "dates": "22-23 Feb",
+    "location": "Kamui",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "NJC",
+    "races": "2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56538",
+    "dates": "22-23 Feb",
+    "location": "Gressoney - La Trinite",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56587",
+    "dates": "22-23 Feb",
+    "location": "Krakauebene",
+    "country": "AUT",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56720",
+    "dates": "22-23 Feb",
+    "location": "Vasilitsa",
+    "country": "GRE",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56811",
+    "dates": "22-23 Feb",
+    "location": "Jolster",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56824",
+    "dates": "22-23 Feb",
+    "location": "Shemshak",
+    "country": "IRI",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56826",
+    "dates": "22-23 Feb",
+    "location": "Les Diablerets",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56860",
+    "dates": "22-23 Feb",
+    "location": "Gore Mountain Ski Area",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57102",
+    "dates": "22-23 Feb",
+    "location": "Jochgrimm/Oclini",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57260",
+    "dates": "22-23 Feb",
+    "location": "Bardonecchia",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "2xGS 4xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57361",
+    "dates": "22-23 Feb",
+    "location": "Blafjoll",
+    "country": "ISL",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "4xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56382",
+    "dates": "23-24 Feb",
+    "location": "Kamui",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56851",
+    "dates": "23-24 Feb",
+    "location": "Waterville Valley",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56861",
+    "dates": "23-24 Feb",
+    "location": "Sugarbush/Mount Ellen, VT",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56622",
+    "dates": "23-25 Feb",
+    "location": "Valcianska Dolina",
+    "country": "SVK",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56203",
+    "dates": "24-25 Feb",
+    "location": "Morzine Avoriaz",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56244",
+    "dates": "24-25 Feb",
+    "location": "Reiteralm (AUT)",
+    "country": "NED",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57251",
+    "dates": "24-25 Feb",
+    "location": "Val Palot",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56172",
+    "dates": "24-26 Feb",
+    "location": "Les Menuires",
+    "country": "FRA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "GS 2xSL",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56297",
+    "dates": "24-26 Feb",
+    "location": "Bjelasnica / Sarajevo",
+    "country": "BIH",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS 8xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56714",
+    "dates": "24-26 Feb",
+    "location": "Yongpyong Resort",
+    "country": "KOR",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57257",
+    "dates": "24-26 Feb",
+    "location": "Abetone",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "CIT",
+    "races": "2xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56280",
+    "dates": "24-27 Feb",
+    "location": "Palisades Tahoe - Alpine Meadows",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56383",
+    "dates": "24-28 Feb",
+    "location": "Sugadairakohgen",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FEC",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56705",
+    "dates": "24-28 Feb",
+    "location": "Whistler Blackcomb, BC",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "TRA • FIS • ENL",
+    "races": "2xDH 2xGS 6xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56881",
+    "dates": "25-26 Feb",
+    "location": "Shemshak",
+    "country": "IRI",
+    "discipline": "AL",
+    "event_type": "ENL",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57741",
+    "dates": "25-26 Feb",
+    "location": "Shymbulak  Mountain Resort",
+    "country": "KAZ",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56474",
+    "dates": "25-28 Feb",
+    "location": "Mzaar-Kfardebian",
+    "country": "LBN",
+    "discipline": "AL",
+    "event_type": "FIS • NC",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56767",
+    "dates": "25-28 Feb",
+    "location": "Camp Fortune, QC",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56778",
+    "dates": "25-28 Feb",
+    "location": "Mont Ste. Marie",
+    "country": "CAN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57253",
+    "dates": "25-28 Feb",
+    "location": "Madesimo",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56863",
+    "dates": "25 Feb-03 Mar",
+    "location": "Aspen Mountain Ski Area",
+    "country": "USA",
+    "discipline": "AL",
+    "event_type": "TRA • NJC",
+    "races": "8xDH 2xSL 2xGS 2xSG",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55678",
+    "dates": "25 Feb-06 Mar",
+    "location": "Tarvisio",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "TRA • WJC",
+    "races": "2xDH 2xSG 2xTC 2xGS 2xSL TP",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56210",
+    "dates": "26 Feb",
+    "location": "Stoos (SUI)",
+    "country": "LIE",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "SG",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57165",
+    "dates": "26 Feb",
+    "location": "Kronplatz (ITA)",
+    "country": "IRL",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56902",
+    "dates": "26-27 Feb",
+    "location": "Popova Sapka",
+    "country": "MKD",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56912",
+    "dates": "26-27 Feb",
+    "location": "Bukovytsya",
+    "country": "UKR",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "8xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56933",
+    "dates": "26-27 Feb",
+    "location": "Suior",
+    "country": "ROU",
+    "discipline": "AL",
+    "event_type": "CHI",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56708",
+    "dates": "26-28 Feb",
+    "location": "Stoos",
+    "country": "SUI",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "GS 2xSG",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "55605",
+    "dates": "26 Feb-02 Mar",
+    "location": "Kvitfjell",
+    "country": "NOR",
+    "discipline": "AL",
+    "event_type": "TRA • WC",
+    "races": "4xDH SG",
+    "gender": "Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": true,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56163",
+    "dates": "27 Feb",
+    "location": "Maribor",
+    "country": "SLO",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57531",
+    "dates": "27 Feb",
+    "location": "Dobbiaco (ITA)",
+    "country": "GEO",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57050",
+    "dates": "27-28 Feb",
+    "location": "Tornik - Zlatibor",
+    "country": "SRB",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57702",
+    "dates": "27-28 Feb",
+    "location": "Yanqing (CHN)",
+    "country": "HKG",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56985",
+    "dates": "27 Feb-01 Mar",
+    "location": "Sestriere",
+    "country": "ITA",
+    "discipline": "AL",
+    "event_type": "NJR",
+    "races": "SL 2xGS",
+    "gender": "Men",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56384",
+    "dates": "27 Feb-02 Mar",
+    "location": "Sapporo",
+    "country": "JPN",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL 2xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56656",
+    "dates": "28 Feb",
+    "location": "Lenggries",
+    "country": "GER",
+    "discipline": "AL",
+    "event_type": "FIS",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56541",
+    "dates": "28 Feb-01 Mar",
+    "location": "Bad Wiessee (GER)",
+    "country": "BRA",
+    "discipline": "AL",
+    "event_type": "NC",
+    "races": "2xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "56718",
+    "dates": "28 Feb-01 Mar",
+    "location": "Jisan Forest Resort",
+    "country": "KOR",
+    "discipline": "AL",
+    "event_type": "FIS • ENL",
+    "races": "4xSL 4xGS",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  },
+  {
+    "event_id": "57405",
+    "dates": "28 Feb-02 Mar",
+    "location": "Tesido - Dobbiaco (ITA)",
+    "country": "MEX",
+    "discipline": "AL",
+    "event_type": "NC • NJC",
+    "races": "4xSL",
+    "gender": "Men & Women",
+    "status": {
+      "data_available": false,
+      "pdf_available": false,
+      "changes": false,
+      "cancelled": false
+    }
+  }
+]

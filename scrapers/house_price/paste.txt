@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div id="@@xxzlGatewayUrl" style="visibility: hidden">https://callback.58.com/antibot/verifycode?serialId=d97cec5f79a71284ef827e67b3af88e5_bbbccde0000a4186bfa14c91f9281a13&amp;code=100&amp;sign=e42ee0eec3234fab7e1d53cc33957342&amp;namespace=cloud_anjuke_xiaoqu_pc&amp;url=https%3A%2F%2Fbeijing.anjuke.com%2Fcommunity%2Fprops%2Fsale%2F176561%2Fp1</div>
+  </body>
+  <script>
+    var url = document.getElementById("@@xxzlGatewayUrl").textContent
+    window.location.assign(url)
+  </script>
+</html>

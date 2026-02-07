@@ -1,0 +1,18 @@
+{
+  "total_properties": 30,
+  "price_analysis": {
+    "avg_total_price": 242.97,
+    "min_total_price": 176.0,
+    "max_total_price": 345.0
+  },
+  "area_analysis": {
+    "avg_area": 92.21,
+    "min_area": 75.0,
+    "max_area": 130.68
+  },
+  "price_per_sqm_analysis": {
+    "avg_price_per_sqm": 26341.23,
+    "min_price_per_sqm": 23158.0,
+    "max_price_per_sqm": 35866.0
+  }
+}
