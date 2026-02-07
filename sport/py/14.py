@@ -54,7 +54,7 @@ def parse_month(year, month):
         data.append(event)
     return data
 
-flattened_data = parse_year(2025)
+flattened_data = parse_year(2026)
 
 logging.info(f"Flattened data: {flattened_data}")
 

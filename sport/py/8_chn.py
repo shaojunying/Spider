@@ -9,7 +9,7 @@ from util.log import setup_logging
 
 setup_logging()
 
-def get_tournament_data(year: str = "2025") -> Dict:
+def get_tournament_data(year: str = "2026") -> Dict:
     """
     Fetch tournament data by month for the given year, aggregate and return as a single JSON.
     """

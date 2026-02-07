@@ -41,7 +41,7 @@ while True:
     data = {
         "query": "",
         "facets": "*",
-        "filters": "(year:'2025')",
+        "filters": "(year:'2026')",
         "hitsPerPage": 15,
         "numericFilters": "finish_date_timestamp>1742195239",
         "page": page

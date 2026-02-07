@@ -78,14 +78,14 @@ if __name__ == '__main__':
 
     data = response.json()
 
-    # 提取2025年的比赛列表
-    competitions_2025_list = data['data']['2025']
+    # 提取2026年的比赛列表
+    competitions_2026_list = data['data']['2026']
 
-    logging.info(f"2025 competitions: {competitions_2025_list}")
+    logging.info(f"2026 competitions: {competitions_2026_list}")
 
     flattened_data = []
 
-    for competition in competitions_2025_list:
+    for competition in competitions_2026_list:
         logging.info(f"Competition: {competition}")
         # 展平比赛数据
         flattened_competition = flatten_dict(competition)

@@ -49,7 +49,7 @@ response_text = driver.find_element("tag name", "body").text
 # 关闭浏览器
 driver.quit()
 # curl_command = f"""
-# curl -X GET "https://m.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=WT&searchString=&skip=0&take=100&nationCodes=CHN&zoneCodes=&dateFrom=2025-01-01&dateTo=2025-12-31&indoorOutdoor=&categories=&isOrderAscending=true&orderField=startDate&surfaceCodes=" \
+# curl -X GET "https://m.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=WT&searchString=&skip=0&take=100&nationCodes=CHN&zoneCodes=&dateFrom=2026-01-01&dateTo=2026-12-31&indoorOutdoor=&categories=&isOrderAscending=true&orderField=startDate&surfaceCodes=" \
 #  -H "Accept: application/json" \
 #  -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
 # """

@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 # 发送请求
 import requests
 
-url = "https://uww.org/apiv4/eventlisting?start_date=2025-01-01&end_date=2025-12-31"
+url = "https://uww.org/apiv4/eventlisting?start_date=2026-01-01&end_date=2026-12-31"
 headers = {
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
 }

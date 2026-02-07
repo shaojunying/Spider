@@ -13,7 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # 发送请求
-url = "https://www.ifsc-climbing.org/api/dapi/events/all?dateFrom=$range(2025-01-01,2025-12-31)&limit=100"
+url = "https://www.ifsc-climbing.org/api/dapi/events/all?dateFrom=$range(2026-01-01,2026-12-31)&limit=100"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
     "sec-ch-ua": '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133")',

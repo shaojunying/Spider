@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 # 发送请求
 import requests
 
-url = "https://www.wbsc.org/en/calendar/2025"
+url = "https://www.wbsc.org/en/calendar/2026"
 headers = {
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
 }
@@ -48,7 +48,7 @@ def parse_events(html):
             "end_date": end_date
         }
 
-        # <tr style="cursor: pointer" class=" internal  " onclick="window.open('https://www.wbsc.org/en/events/2025-baseball-champions-league-americas/home','_self')">
+        # <tr style="cursor: pointer" class=" internal  " onclick="window.open('https://www.wbsc.org/en/events/2026-baseball-champions-league-americas/home','_self')">
         event["url"] = tr["onclick"].split("'")[1]
 
         # 打开url

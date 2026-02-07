@@ -45,8 +45,8 @@ data = {
     'season': '-1',
     'level': '',
     'competitionCategory': '',
-    'fromDate': '2025-01-01',
-    'toDate': '2025-12-31',
+    'fromDate': '2026-01-01',
+    'toDate': '2026-12-31',
     'fetchPage': 1
 }
 

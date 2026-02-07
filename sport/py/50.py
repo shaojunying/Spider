@@ -39,7 +39,7 @@ for _ in range(1, 2):
   -H 'sec-ch-ua: "Chromium";v="134", "Not:A-Brand";v="24", "Google Chrome";v="134"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "macOS"' \
-  --data-raw 'language=cn&year=2025&size=100&page=1'
+  --data-raw 'language=cn&year=2026&size=100&page=1'
     """
 
     result = subprocess.run(

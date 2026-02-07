@@ -29,8 +29,8 @@ def fetch_data(page: int, limit: int = 50):
     data = {
         'operationName': 'getCalendarEvents',
         'variables': {
-            'startDate': '2025-01-01',
-            'endDate': '2025-12-31',
+            'startDate': '2026-01-01',
+            'endDate': '2026-12-31',
             'query': None,
             'regionType': 'world',
             'regionId': None,

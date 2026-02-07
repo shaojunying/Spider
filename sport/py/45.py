@@ -21,13 +21,13 @@ all_data = []
 
 for month in range(1, 13):
     curl_command = f"""
-    curl 'https://m.worldtaekwondo.org/calendar/cld_list.html?cym=2025-{month}&cldgn=' \
+    curl 'https://m.worldtaekwondo.org/calendar/cld_list.html?cym=2026-{month}&cldgn=' \
       `-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
       -H 'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,la;q=0.6,und;q=0.5' \
       -H 'Connection: keep-alive' \
       -b '_ga=GA1.1.168236739.1742396930; _ga_5FTK8WS2DC=GS1.1.1742396929.1.1.1742396953.0.0.0; _ga_SPK6K870R3=GS1.1.1742396956.1.0.1742396956.0.0.0' \
       -H 'DNT: 1' \
-      -H 'Referer: https://m.worldtaekwondo.org/calendar/cld_list.html?cym=2025-{month}&cldgn=' \
+      -H 'Referer: https://m.worldtaekwondo.org/calendar/cld_list.html?cym=2026-{month}&cldgn=' \
       -H 'Sec-Fetch-Dest: document' \
       -H 'Sec-Fetch-Mode: navigate' \
       -H 'Sec-Fetch-Site: same-origin' \
@@ -51,7 +51,7 @@ for month in range(1, 13):
     soup = BeautifulSoup(result.stdout, 'html.parser')
     ul_elem = soup.find("ul", class_="date_day")
     for elem in ul_elem.find_all("li"):
-        # 		<a href="cld_view.html?nid=142000&cym=2025-3&cldgn=">
+        # 		<a href="cld_view.html?nid=142000&cym=2026-3&cldgn=">
 # 				<span class="day">1 ~ 7</span>
 # 				<span class="title" style="text-transform:none;">[KYORUGI] WT Online Kyorugi Coach Certification Course (LV1)</span>
 # 				</a>

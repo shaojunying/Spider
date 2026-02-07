@@ -11,7 +11,7 @@ logger = logging.getLogger()
 
 # 请求API获取比赛数据
 def fetch_competitions(page):
-    url = f"https://api.worldaquatics.com/fina/competitions?pageSize=100&venueDateFrom=2025-01-01T00%3A00%3A00%2B00%3A00&venueDateTo=2026-01-01T00%3A00%3A00%2B00%3A00&disciplines=&group=FINA&sort=dateFrom%2Casc&page={page}"
+    url = f"https://api.worldaquatics.com/fina/competitions?pageSize=100&venueDateFrom=2026-01-01T00%3A00%3A00%2B00%3A00&venueDateTo=2026-01-01T00%3A00%3A00%2B00%3A00&disciplines=&group=FINA&sort=dateFrom%2Casc&page={page}"
     try:
         response = requests.get(url)
         response.raise_for_status()  # 抛出HTTP错误

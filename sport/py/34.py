@@ -13,7 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # 发送请求
-url = "https://api.wr-rims-prod.pulselive.com/rugby/v3/event?pageSize=100&sort=asc&startDate=2025-01-01&endDate=2025-12-31"
+url = "https://api.wr-rims-prod.pulselive.com/rugby/v3/event?pageSize=100&sort=asc&startDate=2026-01-01&endDate=2026-12-31"
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
     "sec-ch-ua": '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133")',

@@ -22,8 +22,8 @@ def fetch_gymnastics_events():
     }
 
     params = {
-        'from': '2025-01-01',
-        'to': '2025-12-31',
+        'from': '2026-01-01',
+        'to': '2026-12-31',
         'level': '',
         'discipline': '',
         'ageGroupType': '',

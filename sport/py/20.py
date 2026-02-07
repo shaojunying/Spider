@@ -28,7 +28,7 @@ while True:
       -H 'dnt: 1' \
       -H 'origin: https://www.fei.org' \
       -H 'priority: u=1, i' \
-      -H 'referer: https://www.fei.org/events?month=01&year=2025&country=CHN' \
+      -H 'referer: https://www.fei.org/events?month=01&year=2026&country=CHN' \
       -H 'sec-ch-device-memory: 8' \
       -H 'sec-ch-ua: "Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"' \
       -H 'sec-ch-ua-arch: "arm"' \
@@ -41,7 +41,7 @@ while True:
       -H 'sec-fetch-site: same-origin' \
       -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36' \
       -H 'x-requested-with: XMLHttpRequest' \
-      --data-raw 'month=all&search=&page={page}&year=2025&country=CHN&csrfToken=Mjk1NTg0NTY0NjdkN2RjZGM5ODk4OTUuNzE0MTgwOTg%253D'
+      --data-raw 'month=all&search=&page={page}&year=2026&country=CHN&csrfToken=Mjk1NTg0NTY0NjdkN2RjZGM5ODk4OTUuNzE0MTgwOTg%253D'
        """
 
 

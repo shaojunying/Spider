@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # 发送请求
-url = "https://www.canoeicf.com/all-key-dates-icf-events-2025"
+url = "https://www.canoeicf.com/all-key-dates-icf-events-2026"
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",

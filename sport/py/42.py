@@ -30,10 +30,10 @@ html = response.text
 
 soup = BeautifulSoup(html, "html.parser")
 
-# 找到2025年的部分
+# 找到2026年的部分
 matches = []
 for h2 in soup.find_all("h2"):
-    a = h2.find("a", id = "Date2025")
+    a = h2.find("a", id = "Date2026")
     if a is None:
         continue
     table = h2.find_next("table")  # 找到紧随其后的表格

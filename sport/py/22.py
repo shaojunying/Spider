@@ -40,7 +40,7 @@ headers = {
     'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryzDGGtTYfrIvmsZGO',
     'DNT': '1',
     'Origin': 'https://isu-skating.com',
-    'Referer': 'https://isu-skating.com/events/?month=February&season=2024%2F2025',
+    'Referer': 'https://isu-skating.com/events/?month=February&season=2024%2F2026',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-site',

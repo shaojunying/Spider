@@ -68,9 +68,9 @@ if __name__ == '__main__':
     # {items: [{'month':2, 'year':2022}]
     items = data['items']
     flattened_data = []
-    # 只保留year为2025的item
+    # 只保留year为2026的item
     for item_for_one_month in items:
-        if item_for_one_month['year'] != 2025:
+        if item_for_one_month['year'] != 2026:
             continue
         logging.info(f"Item: {item_for_one_month}")
 

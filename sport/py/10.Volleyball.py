@@ -24,7 +24,7 @@ def setup_logging(log_dir: str = 'logs') -> None:
     )
 
 
-def get_tournament_data(year: str = "2025") -> Dict:
+def get_tournament_data(year: str = "2026") -> Dict:
     """
     Fetch tournament data by month for the given year, aggregate and return as a single JSON.
     """

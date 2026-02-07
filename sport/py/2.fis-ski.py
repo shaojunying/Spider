@@ -23,7 +23,7 @@ def fetch_fis_calendar(season_code: str, season_month: str) -> str:
         HTML content of the calendar
     """
     print("参数：", season_code, season_month)
-    # url = 'https://data.fis-ski.com/fis_events/ajax/calendarfunctions/load_calendar.html?sectorcode=&seasoncode=&categorycode=&disciplinecode=&gendercode=&place=&eventselection=&racedate=&racecodex=&nationcode=&seasonmonth=02-2025&loadmonth=1&saveselection=-1&pageid=725&seasonselection='
+    # url = 'https://data.fis-ski.com/fis_events/ajax/calendarfunctions/load_calendar.html?sectorcode=&seasoncode=&categorycode=&disciplinecode=&gendercode=&place=&eventselection=&racedate=&racecodex=&nationcode=&seasonmonth=02-2026&loadmonth=1&saveselection=-1&pageid=725&seasonselection='
     url = (f'https://data.fis-ski.com/fis_events/ajax/calendarfunctions/load_calendar.html?'
            f'seasoncode={season_code}&seasonmonth={season_month}&loadmonth=0'
            f'&saveselection=-1&pageid=725')
@@ -198,7 +198,7 @@ def main():
     competitions = []
     for month in range(1, 13):
         print(f"Fetching data for month {month}")
-        html_content = fetch_fis_calendar(season_code='2025', season_month=f'{month:02d}-2025')
+        html_content = fetch_fis_calendar(season_code='2026', season_month=f'{month:02d}-2026')
 
         if html_content:
             data = parse_fis_competition_data(html_content)

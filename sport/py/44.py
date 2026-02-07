@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 # 发送请求
 import requests
 
-url = "https://www.ittf.com/2025-events-calendar/"
+url = "https://www.ittf.com/2026-events-calendar/"
 headers = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,la;q=0.6,und;q=0.5",

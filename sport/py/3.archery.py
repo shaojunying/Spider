@@ -17,14 +17,13 @@ def fetch_data(page: int = 0) -> Dict:
     """
     Fetch data from the API for the given page number.
     """
-    url = f'https://api.worldarchery.sport/?EventTypeId=1&WorldRecordStatus=0&WorldRankingEvent=0&Cancelled=-1&Detailed=1&StartDate=2025-01-01&EndDate=2025-12-30&SortBy=DATE&v=3&content=COMPETITIONS&RBP=100000'
+    url = f'https://api.worldarchery.sport/?EventTypeId=1&WorldRecordStatus=0&WorldRankingEvent=0&Cancelled=-1&Detailed=1&StartDate=2026-01-01&EndDate=2026-12-30&SortBy=DATE&v=3&content=COMPETITIONS&RBP=100000'
     headers = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,la;q=0.6,und;q=0.5',
         'Client-Security-Token': '8a9aeaee-69b6-4d7b-81fa-8ca3f93adb6c',
         'Connection': 'keep-alive',
         'DNT': '1',
-        'If-Modified-Since': 'Sat, 08 Feb 2025 11:21:34 GMT',
         'Origin': 'https://www.worldarchery.sport',
         'Referer': 'https://www.worldarchery.sport/',
         'Sec-Fetch-Dest': 'empty',
@@ -76,8 +75,8 @@ def save_to_excel(competitions: List[Dict], filename):
             'Latitude': comp.get('Address', {}).get('Latitude', ''),
             'Longitude': comp.get('Address', {}).get('Longitude', '')
         }
-        # 只保留开始时间、结束时间都在2025年的比赛
-        if flat_comp['DFrom'].startswith('2025') and flat_comp['DTo'].startswith('2025'):
+        # 只保留开始时间、结束时间都在2026年的比赛
+        if flat_comp['DFrom'].startswith('2026') and flat_comp['DTo'].startswith('2026'):
             flattened_data.append(flat_comp)
 
     # Convert to DataFrame
