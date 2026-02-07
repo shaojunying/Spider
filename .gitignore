@@ -5,3 +5,7 @@
 .DS_STORE
 *.log
 *.csv
+__pycache__/
+dist/
+*.egg-info/
+*.zip
